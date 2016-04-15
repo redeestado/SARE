@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jcl-over-slf4j-1.6.0.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-envers-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-logging-1.0.4.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jstl-impl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/c-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/c-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/c.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/fmt-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/fmt-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/fmt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/fn.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/permittedtaglibs.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/scriptfree.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/sql-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/sql-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/sql.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/x-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/x-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar-1/meta-inf/x.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-io-2.3-tests.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jstl-api-1.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/common-annotations.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/log4j-1.2.16.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/imap-1.4.5.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-fileupload-1.2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/json-1.0.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/postgresql-9.4.1207.jre6.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jboss-logging-3.1.0.CR1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/cglib-2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-proxool-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-ehcache-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/smtp.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/c3p0-0.9.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jgroups-3.0.2.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/antlr-2.7.6.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/infinispan-core-5.1.0.CR3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/prettyfaces-jsf2-3.3.3.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-prettyfaces-jsf2-3.3.3.jar/meta-inf/faces-config.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-prettyfaces-jsf2-3.3.3.jar/meta-inf/ocpsoft-pretty-faces.taglib.xml" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-prettyfaces-jsf2-3.3.3.jar/meta-inf/ocpsoft-pretty-faces.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/facelets-taglib-jsf20-spring-3-0.5.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-facelets-taglib-jsf20-spring-3-0.5.jar/meta-inf/faces-config.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-facelets-taglib-jsf20-spring-3-0.5.jar/meta-inf/spring_security.taglib.xml" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-infinispan-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-entitymanager-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/pop3-1.4.5.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-beanutils-1.8.0-BETA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/javax.faces-2.1.14.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.14.jar/meta-inf/html_basic.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.14.jar/meta-inf/jsf_core.tld" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.14.jar/meta-inf/mojarra_ext.taglib.xml" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.14.jar/meta-inf/mojarra_ext.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/prettyfaces-jsf2-3.3.3.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-prettyfaces-jsf2-3.3.3.jar-1/meta-inf/faces-config.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-prettyfaces-jsf2-3.3.3.jar-1/meta-inf/ocpsoft-pretty-faces.taglib.xml" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-prettyfaces-jsf2-3.3.3.jar-1/meta-inf/ocpsoft-pretty-faces.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/javassist-3.12.0.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/pop3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/rhq-pluginAnnotations-3.0.4.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/cglib-2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jstl-api-1.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/proxool-0.8.3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jboss-marshalling-1.3.0.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/woodstox-core-asl-4.1.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/servlet-api.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/javax.faces-2.2.1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.1.jar/meta-inf/html_basic.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.1.jar/meta-inf/jsf_core.tld" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.1.jar/meta-inf/mojarra_ext.taglib.xml" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.1.jar/meta-inf/mojarra_ext.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-envers-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-io-2.3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/stax-api-1.0-2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-io-2.0.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/ehcache-core-2.4.3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-collections-3.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/standard-1.1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/c-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/c-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/c.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fmt-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fmt-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fmt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fn.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/permittedtaglibs.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/scriptfree.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/sql-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/sql-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/sql.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/x-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/x-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/x.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-c3p0-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/primefaces-5.3.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar-1/meta-inf/faces-config.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar-1/meta-inf/primefaces-p.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar-1/meta-inf/primefaces-pm.taglib.xml" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/el-impl-2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jta-1.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-entitymanager-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jstl-impl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/c-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/c-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/c.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/fmt-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/fmt-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/fmt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/fn.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/permittedtaglibs.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/scriptfree.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/sql-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/sql-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/sql.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/x-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/x-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl-1.2.jar/meta-inf/x.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-io-2.3-test-sources.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/dsn-1.4.5.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-logging-1.0.4.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-io-2.3-sources.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/dsn.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/el-api-2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/staxmapper-1.0.0.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/smtp-1.4.5.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/mailapi.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/stax2-api-3.1.1.jar"/>
+  <path value="C:/Users/Rede Estado/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jboss-logging-3.1.0.CR1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-ehcache-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jboss-marshalling-river-1.3.0.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/asm-3.1.jar"/>
+  <path value="C:/Users/Rede Estado/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/antlr-2.7.7.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-beanutils-1.8.0-BETA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-core-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-collections-3.2.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/servlet-api-3.0-alpha-1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/rhq-pluginAnnotations-3.0.4.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/staxmapper-1.0.0.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jboss-transaction-api-1.0.1.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/javassist-3.15.0-GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/taglib-core-0.4.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/gson-2.2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-c3p0-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/xml-apis-1.0.b2.jar"/>
+  <path value="/SARE/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-infinispan-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/imap.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-io-2.3-javadoc.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jboss-transaction-api-1.0.1.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/postgresql-9.4.1208.jre6.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/primefaces-5.3.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/faces-config.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/primefaces-p.taglib.xml" project="SARE"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/primefaces-pm.taglib.xml" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/activation-1.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-io-2.3-javadoc.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-io-2.3-test-sources.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jsf-tlds.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-tlds.jar/meta-inf/html_basic.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-tlds.jar/meta-inf/jsf_core.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/postgres.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/standard-1.1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/c-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/c-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/c.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fmt-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fmt-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fmt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fn.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/permittedtaglibs.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/scriptfree.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/sql-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/sql-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/sql.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/x-1_0-rt.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/x-1_0.tld" project="SARE"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/x.tld" project="SARE"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/javax.mail-1.4.5.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-digester-1.7.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/javassist-3.12.0.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-commons-annotations-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jgroups-3.0.2.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jboss-logging-3.1.0.CR2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-collections-3.2.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/slf4j-api-1.6.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-core-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/log4j-1.2.16.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jboss-marshalling-river-1.3.0.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/infinispan-core-5.1.0.CR3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jsp-api-2.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/jcl-over-slf4j-1.6.0.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/mailapi-1.4.5.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-digester.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jsf-api.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/hibernate-proxool-4.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/slf4j-api-1.7.18.jar"/>
+  <path value="C:/Users/Rede Estado/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+  <path value="C:/Users/Rede Estado/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/stax2-api-3.1.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/el-api-2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/servlet-api-6.0.29.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/el-impl-2.2.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/commons-io-2.3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/mail.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/c3p0-0.9.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/dom4j-1.6.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/proxool-0.8.3.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/commons-io-2.3-sources.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/jboss-marshalling-1.3.0.GA.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/Bibliotecas/woodstox-core-asl-4.1.1.jar"/>
+  <path value="C:/Users/Rede Estado/Desktop/projeto_sare/SARE/WebContent/WEB-INF/lib/ehcache-core-2.4.3.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="45" name="%0" offset="3024" path="%1"/>
+   <linked-el length="45" name="%0" offset="4331" path="%1"/>
+   <linked-el length="35" name="%2" offset="1024" path="%3"/>
+   <linked-el length="29" name="%4" offset="6337" path="%3"/>
+   <linked-el length="35" name="%4" offset="6271" path="%3"/>
+   <linked-el length="15" name="%4" offset="5776" path="%3"/>
+   <linked-el length="34" name="%5" offset="3708" path="%6"/>
+   <linked-el length="34" name="%5" offset="3390" path="%6"/>
+   <linked-el length="33" name="%5" offset="888" path="%6"/>
+   <linked-el length="32" name="%5" offset="4026" path="%6"/>
+   <linked-el length="34" name="%5" offset="1327" path="%6"/>
+   <linked-el length="43" name="%5" offset="1167" path="%7"/>
+   <linked-el length="43" name="%5" offset="1357" path="%7"/>
+   <linked-el length="32" name="%5" offset="522" path="%7"/>
+   <linked-el length="35" name="%5" offset="2660" path="%6"/>
+   <linked-el length="34" name="%5" offset="1059" path="%6"/>
+   <linked-el length="38" name="%5" offset="2438" path="%7"/>
+   <linked-el length="40" name="%5" offset="4197" path="%6"/>
+   <linked-el length="41" name="%5" offset="1184" path="%6"/>
+   <linked-el length="35" name="%5" offset="2976" path="%6"/>
+   <linked-el length="38" name="%5" offset="3872" path="%6"/>
+   <linked-el length="36" name="%5" offset="3551" path="%6"/>
+   <linked-el length="31" name="%5" offset="2331" path="%6"/>
+   <linked-el length="32" name="%5" offset="2007" path="%6"/>
+   <linked-el length="35" name="%5" offset="3161" path="%6"/>
+   <linked-el length="62" name="%5" offset="2035" path="%7"/>
+   <linked-el length="44" name="%5" offset="813" path="%7"/>
+   <linked-el length="56" name="%5" offset="1832" path="%7"/>
+   <linked-el length="32" name="%5" offset="520" path="%6"/>
+   <linked-el length="35" name="%5" offset="2819" path="%6"/>
+   <linked-el length="35" name="%5" offset="2501" path="%6"/>
+   <linked-el length="32" name="%5" offset="2177" path="%6"/>
+   <linked-el length="41" name="%8" offset="1937" path="%1"/>
+   <linked-el length="22" name="%9" offset="5399" path="%3"/>
+   <linked-el length="29" name="%10" offset="6337" path="%3"/>
+   <linked-el length="14" name="%10" offset="5682" path="%3"/>
+   <linked-el length="21" name="%11" offset="573" path="%12"/>
+   <linked-el length="28" name="%11" offset="1394" path="%12"/>
+   <linked-el length="12" name="%13" offset="5591" path="%3"/>
+   <linked-el length="12" name="%13" offset="6155" path="%3"/>
+   <linked-el length="42" name="%14" offset="4501" path="%1"/>
+   <linked-el length="34" name="%15" offset="2294" path="%3"/>
+   <linked-el length="26" name="%16" offset="7040" path="%3"/>
+   <linked-el length="34" name="%17" offset="7305" path="%3"/>
+   <linked-el length="12" name="%18" offset="515" path="%19"/>
+   <linked-el length="46" name="%20" offset="9448" path="%1"/>
+   <linked-el length="35" name="%21" offset="8558" path="%22"/>
+   <linked-el length="41" name="%21" offset="8814" path="%22"/>
+   <linked-el length="34" name="%21" offset="2664" path="%22"/>
+   <linked-el length="20" name="%21" offset="3354" path="%7"/>
+   <linked-el length="30" name="%21" offset="6436" path="%22"/>
+   <linked-el length="31" name="%21" offset="7586" path="%22"/>
+   <linked-el length="37" name="%21" offset="8098" path="%22"/>
+   <linked-el length="19" name="%21" offset="3535" path="%7"/>
+   <linked-el length="38" name="%21" offset="8288" path="%22"/>
+   <linked-el length="31" name="%21" offset="4511" path="%22"/>
+   <linked-el length="30" name="%21" offset="593" path="%7"/>
+   <linked-el length="40" name="%21" offset="4156" path="%22"/>
+   <linked-el length="34" name="%21" offset="3002" path="%22"/>
+   <linked-el length="33" name="%21" offset="3194" path="%22"/>
+   <linked-el length="32" name="%21" offset="5239" path="%22"/>
+   <linked-el length="34" name="%21" offset="4341" path="%22"/>
+   <linked-el length="34" name="%21" offset="6965" path="%22"/>
+   <linked-el length="22" name="%21" offset="3648" path="%7"/>
+   <linked-el length="32" name="%21" offset="4849" path="%22"/>
+   <linked-el length="34" name="%21" offset="7921" path="%22"/>
+   <linked-el length="31" name="%21" offset="880" path="%22"/>
+   <linked-el length="30" name="%21" offset="3266" path="%7"/>
+   <linked-el length="36" name="%21" offset="7757" path="%22"/>
+   <linked-el length="33" name="%21" offset="3788" path="%22"/>
+   <linked-el length="38" name="%21" offset="6796" path="%22"/>
+   <linked-el length="30" name="%21" offset="6282" path="%22"/>
+   <linked-el length="20" name="%21" offset="3768" path="%7"/>
+   <linked-el length="35" name="%21" offset="9160" path="%22"/>
+   <linked-el length="32" name="%21" offset="1030" path="%22"/>
+   <linked-el length="31" name="%21" offset="4678" path="%22"/>
+   <linked-el length="30" name="%21" offset="518" path="%22"/>
+   <linked-el length="30" name="%21" offset="2308" path="%22"/>
+   <linked-el length="42" name="%21" offset="3396" path="%22"/>
+   <linked-el length="36" name="%21" offset="3972" path="%22"/>
+   <linked-el length="32" name="%21" offset="3445" path="%7"/>
+   <linked-el length="33" name="%21" offset="2497" path="%22"/>
+   <linked-el length="37" name="%21" offset="7423" path="%22"/>
+   <linked-el length="35" name="%21" offset="8990" path="%22"/>
+   <linked-el length="32" name="%21" offset="5021" path="%22"/>
+   <linked-el length="30" name="%21" offset="1947" path="%22"/>
+   <linked-el length="35" name="%21" offset="3611" path="%22"/>
+   <linked-el length="23" name="%21" offset="3885" path="%7"/>
+   <linked-el length="31" name="%21" offset="2135" path="%22"/>
+   <linked-el length="38" name="%21" offset="6612" path="%22"/>
+   <linked-el length="34" name="%21" offset="2834" path="%22"/>
+   <linked-el length="35" name="%23" offset="8558" path="%22"/>
+   <linked-el length="41" name="%23" offset="8814" path="%22"/>
+   <linked-el length="34" name="%23" offset="2664" path="%22"/>
+   <linked-el length="30" name="%23" offset="6436" path="%22"/>
+   <linked-el length="31" name="%23" offset="7586" path="%22"/>
+   <linked-el length="37" name="%23" offset="8098" path="%22"/>
+   <linked-el length="38" name="%23" offset="8288" path="%22"/>
+   <linked-el length="31" name="%23" offset="4511" path="%22"/>
+   <linked-el length="30" name="%23" offset="593" path="%7"/>
+   <linked-el length="40" name="%23" offset="4156" path="%22"/>
+   <linked-el length="34" name="%23" offset="3002" path="%22"/>
+   <linked-el length="33" name="%23" offset="3194" path="%22"/>
+   <linked-el length="32" name="%23" offset="5239" path="%22"/>
+   <linked-el length="56" name="%23" offset="4228" path="%7"/>
+   <linked-el length="34" name="%23" offset="4341" path="%22"/>
+   <linked-el length="34" name="%23" offset="6965" path="%22"/>
+   <linked-el length="35" name="%23" offset="4031" path="%7"/>
+   <linked-el length="32" name="%23" offset="4849" path="%22"/>
+   <linked-el length="34" name="%23" offset="7921" path="%22"/>
+   <linked-el length="31" name="%23" offset="880" path="%22"/>
+   <linked-el length="36" name="%23" offset="7757" path="%22"/>
+   <linked-el length="27" name="%23" offset="1228" path="%22"/>
+   <linked-el length="33" name="%23" offset="3788" path="%22"/>
+   <linked-el length="38" name="%23" offset="6796" path="%22"/>
+   <linked-el length="27" name="%23" offset="4605" path="%7"/>
+   <linked-el length="30" name="%23" offset="6282" path="%22"/>
+   <linked-el length="35" name="%23" offset="9160" path="%22"/>
+   <linked-el length="32" name="%23" offset="1030" path="%22"/>
+   <linked-el length="31" name="%23" offset="4678" path="%22"/>
+   <linked-el length="30" name="%23" offset="518" path="%22"/>
+   <linked-el length="30" name="%23" offset="2308" path="%22"/>
+   <linked-el length="42" name="%23" offset="3396" path="%22"/>
+   <linked-el length="36" name="%23" offset="3972" path="%22"/>
+   <linked-el length="27" name="%23" offset="1153" path="%22"/>
+   <linked-el length="33" name="%23" offset="2497" path="%22"/>
+   <linked-el length="37" name="%23" offset="7423" path="%22"/>
+   <linked-el length="35" name="%23" offset="8990" path="%22"/>
+   <linked-el length="32" name="%23" offset="5021" path="%22"/>
+   <linked-el length="30" name="%23" offset="1947" path="%22"/>
+   <linked-el length="35" name="%23" offset="3611" path="%22"/>
+   <linked-el length="31" name="%23" offset="2135" path="%22"/>
+   <linked-el length="31" name="%23" offset="2918" path="%7"/>
+   <linked-el length="38" name="%23" offset="6612" path="%22"/>
+   <linked-el length="34" name="%23" offset="2834" path="%22"/>
+   <linked-el length="34" name="%24" offset="3708" path="%6"/>
+   <linked-el length="20" name="%24" offset="1694" path="%7"/>
+   <linked-el length="34" name="%24" offset="3390" path="%6"/>
+   <linked-el length="33" name="%24" offset="888" path="%6"/>
+   <linked-el length="32" name="%24" offset="4026" path="%6"/>
+   <linked-el length="43" name="%24" offset="1167" path="%7"/>
+   <linked-el length="43" name="%24" offset="1357" path="%7"/>
+   <linked-el length="19" name="%24" offset="1416" path="%7"/>
+   <linked-el length="32" name="%24" offset="522" path="%7"/>
+   <linked-el length="35" name="%24" offset="2660" path="%6"/>
+   <linked-el length="34" name="%24" offset="1059" path="%6"/>
+   <linked-el length="40" name="%24" offset="4197" path="%6"/>
+   <linked-el length="35" name="%24" offset="2976" path="%6"/>
+   <linked-el length="38" name="%24" offset="3872" path="%6"/>
+   <linked-el length="36" name="%24" offset="3551" path="%6"/>
+   <linked-el length="31" name="%24" offset="2331" path="%6"/>
+   <linked-el length="32" name="%24" offset="2007" path="%6"/>
+   <linked-el length="20" name="%24" offset="1466" path="%7"/>
+   <linked-el length="35" name="%24" offset="3161" path="%6"/>
+   <linked-el length="20" name="%24" offset="1267" path="%7"/>
+   <linked-el length="32" name="%24" offset="520" path="%6"/>
+   <linked-el length="22" name="%24" offset="1577" path="%7"/>
+   <linked-el length="35" name="%24" offset="2819" path="%6"/>
+   <linked-el length="35" name="%24" offset="2501" path="%6"/>
+   <linked-el length="32" name="%24" offset="2177" path="%6"/>
+   <linked-el length="21" name="%25" offset="573" path="%12"/>
+   <linked-el length="28" name="%25" offset="1394" path="%12"/>
+   <linked-el length="52" name="%26" offset="9080" path="%1"/>
+   <linked-el length="30" name="%27" offset="6436" path="%22"/>
+   <linked-el length="31" name="%27" offset="7586" path="%22"/>
+   <linked-el length="37" name="%27" offset="8098" path="%22"/>
+   <linked-el length="19" name="%27" offset="3535" path="%7"/>
+   <linked-el length="31" name="%27" offset="4511" path="%22"/>
+   <linked-el length="30" name="%27" offset="593" path="%7"/>
+   <linked-el length="40" name="%27" offset="4156" path="%22"/>
+   <linked-el length="34" name="%27" offset="3002" path="%22"/>
+   <linked-el length="34" name="%27" offset="6965" path="%22"/>
+   <linked-el length="22" name="%27" offset="3648" path="%7"/>
+   <linked-el length="35" name="%27" offset="4031" path="%7"/>
+   <linked-el length="30" name="%27" offset="3266" path="%7"/>
+   <linked-el length="38" name="%27" offset="6796" path="%22"/>
+   <linked-el length="30" name="%27" offset="6282" path="%22"/>
+   <linked-el length="20" name="%27" offset="3768" path="%7"/>
+   <linked-el length="32" name="%27" offset="1030" path="%22"/>
+   <linked-el length="30" name="%27" offset="518" path="%22"/>
+   <linked-el length="30" name="%27" offset="2308" path="%22"/>
+   <linked-el length="36" name="%27" offset="3972" path="%22"/>
+   <linked-el length="27" name="%27" offset="1153" path="%22"/>
+   <linked-el length="37" name="%27" offset="7423" path="%22"/>
+   <linked-el length="35" name="%27" offset="8990" path="%22"/>
+   <linked-el length="32" name="%27" offset="5021" path="%22"/>
+   <linked-el length="30" name="%27" offset="1947" path="%22"/>
+   <linked-el length="35" name="%27" offset="3611" path="%22"/>
+   <linked-el length="23" name="%27" offset="3885" path="%7"/>
+   <linked-el length="34" name="%27" offset="2834" path="%22"/>
+   <linked-el length="35" name="%27" offset="8558" path="%22"/>
+   <linked-el length="41" name="%27" offset="8814" path="%22"/>
+   <linked-el length="34" name="%27" offset="2664" path="%22"/>
+   <linked-el length="20" name="%27" offset="3354" path="%7"/>
+   <linked-el length="38" name="%27" offset="8288" path="%22"/>
+   <linked-el length="33" name="%27" offset="3194" path="%22"/>
+   <linked-el length="32" name="%27" offset="5239" path="%22"/>
+   <linked-el length="56" name="%27" offset="4228" path="%7"/>
+   <linked-el length="34" name="%27" offset="4341" path="%22"/>
+   <linked-el length="32" name="%27" offset="4849" path="%22"/>
+   <linked-el length="34" name="%27" offset="7921" path="%22"/>
+   <linked-el length="31" name="%27" offset="880" path="%22"/>
+   <linked-el length="36" name="%27" offset="7757" path="%22"/>
+   <linked-el length="27" name="%27" offset="1228" path="%22"/>
+   <linked-el length="33" name="%27" offset="3788" path="%22"/>
+   <linked-el length="27" name="%27" offset="4605" path="%7"/>
+   <linked-el length="35" name="%27" offset="9160" path="%22"/>
+   <linked-el length="31" name="%27" offset="4678" path="%22"/>
+   <linked-el length="42" name="%27" offset="3396" path="%22"/>
+   <linked-el length="32" name="%27" offset="3445" path="%7"/>
+   <linked-el length="33" name="%27" offset="2497" path="%22"/>
+   <linked-el length="31" name="%27" offset="2135" path="%22"/>
+   <linked-el length="31" name="%27" offset="2918" path="%7"/>
+   <linked-el length="38" name="%27" offset="6612" path="%22"/>
+   <linked-el length="44" name="%28" offset="3225" path="%1"/>
+   <linked-el length="48" name="%29" offset="8417" path="%1"/>
+   <linked-el length="47" name="%30" offset="3962" path="%1"/>
+   <linked-el length="43" name="%31" offset="993" path="%1"/>
+   <linked-el length="51" name="%32" offset="4146" path="%1"/>
+   <linked-el length="14" name="%33" offset="6623" path="%3"/>
+   <linked-el length="14" name="%33" offset="6742" path="%3"/>
+   <linked-el length="14" name="%33" offset="6857" path="%3"/>
+   <linked-el length="14" name="%33" offset="6968" path="%3"/>
+   <linked-el length="22" name="%34" offset="335" path="%19"/>
+   <linked-el length="22" name="%34" offset="671" path="%19"/>
+   <linked-el length="27" name="%34" offset="583" path="%19"/>
+   <linked-el length="21" name="%34" offset="456" path="%19"/>
+   <linked-el length="21" name="%34" offset="792" path="%19"/>
+   <linked-el length="46" name="%35" offset="9267" path="%1"/>
+   <linked-el length="15" name="%36" offset="5871" path="%3"/>
+   <linked-el length="46" name="%37" offset="8866" path="%1"/>
+   <linked-el length="41" name="%38" offset="820" path="%1"/>
+   <linked-el length="34" name="%39" offset="3708" path="%6"/>
+   <linked-el length="20" name="%39" offset="1694" path="%7"/>
+   <linked-el length="34" name="%39" offset="3390" path="%6"/>
+   <linked-el length="33" name="%39" offset="888" path="%6"/>
+   <linked-el length="32" name="%39" offset="4026" path="%6"/>
+   <linked-el length="34" name="%39" offset="1327" path="%6"/>
+   <linked-el length="43" name="%39" offset="1167" path="%7"/>
+   <linked-el length="43" name="%39" offset="1357" path="%7"/>
+   <linked-el length="19" name="%39" offset="1416" path="%7"/>
+   <linked-el length="32" name="%39" offset="522" path="%7"/>
+   <linked-el length="35" name="%39" offset="2660" path="%6"/>
+   <linked-el length="34" name="%39" offset="1059" path="%6"/>
+   <linked-el length="38" name="%39" offset="2438" path="%7"/>
+   <linked-el length="40" name="%39" offset="4197" path="%6"/>
+   <linked-el length="41" name="%39" offset="1184" path="%6"/>
+   <linked-el length="35" name="%39" offset="2976" path="%6"/>
+   <linked-el length="38" name="%39" offset="3872" path="%6"/>
+   <linked-el length="36" name="%39" offset="3551" path="%6"/>
+   <linked-el length="31" name="%39" offset="2331" path="%6"/>
+   <linked-el length="32" name="%39" offset="2007" path="%6"/>
+   <linked-el length="20" name="%39" offset="1466" path="%7"/>
+   <linked-el length="35" name="%39" offset="3161" path="%6"/>
+   <linked-el length="62" name="%39" offset="2035" path="%7"/>
+   <linked-el length="20" name="%39" offset="1267" path="%7"/>
+   <linked-el length="44" name="%39" offset="813" path="%7"/>
+   <linked-el length="56" name="%39" offset="1832" path="%7"/>
+   <linked-el length="32" name="%39" offset="520" path="%6"/>
+   <linked-el length="22" name="%39" offset="1577" path="%7"/>
+   <linked-el length="35" name="%39" offset="2819" path="%6"/>
+   <linked-el length="35" name="%39" offset="2501" path="%6"/>
+   <linked-el length="32" name="%39" offset="2177" path="%6"/>
+   <linked-el length="34" name="%40" offset="6736" path="%41"/>
+   <linked-el length="30" name="%40" offset="7985" path="%41"/>
+   <linked-el length="44" name="%40" offset="4691" path="%41"/>
+   <linked-el length="28" name="%40" offset="8534" path="%41"/>
+   <linked-el length="60" name="%40" offset="7296" path="%41"/>
+   <linked-el length="47" name="%40" offset="8704" path="%41"/>
+   <linked-el length="55" name="%40" offset="9632" path="%41"/>
+   <linked-el length="57" name="%40" offset="6143" path="%41"/>
+   <linked-el length="27" name="%40" offset="8386" path="%41"/>
+   <linked-el length="44" name="%40" offset="8481" path="%41"/>
+   <linked-el length="47" name="%40" offset="7717" path="%41"/>
+   <linked-el length="49" name="%40" offset="7877" path="%41"/>
+   <linked-el length="44" name="%40" offset="7496" path="%41"/>
+   <linked-el length="42" name="%40" offset="650" path="%41"/>
+   <linked-el length="67" name="%40" offset="6348" path="%41"/>
+   <linked-el length="43" name="%40" offset="8334" path="%41"/>
+   <linked-el length="10" name="%42" offset="2464" path="%3"/>
+   <linked-el length="10" name="%42" offset="2134" path="%3"/>
+   <linked-el length="10" name="%42" offset="2154" path="%3"/>
+   <linked-el length="10" name="%42" offset="2444" path="%3"/>
+   <linked-el length="42" name="%43" offset="4668" path="%1"/>
+   <linked-el length="37" name="%44" offset="685" path="%45"/>
+   <linked-el length="37" name="%46" offset="866" path="%45"/>
+   <linked-el length="23" name="%47" offset="5956" path="%3"/>
+   <linked-el length="26" name="%48" offset="2003" path="%3"/>
+   <linked-el length="45" name="%49" offset="2847" path="%1"/>
+   <linked-el length="23" name="%50" offset="7419" path="%3"/>
+   <linked-el length="45" name="%51" offset="8229" path="%1"/>
+   <linked-el length="25" name="%52" offset="5779" path="%41"/>
+   <linked-el length="24" name="%52" offset="5723" path="%41"/>
+   <linked-el length="30" name="%52" offset="5598" path="%41"/>
+   <linked-el length="60" name="%52" offset="7296" path="%41"/>
+   <linked-el length="47" name="%52" offset="8704" path="%41"/>
+   <linked-el length="28" name="%52" offset="5474" path="%41"/>
+   <linked-el length="44" name="%52" offset="8481" path="%41"/>
+   <linked-el length="26" name="%52" offset="5030" path="%41"/>
+   <linked-el length="47" name="%52" offset="7717" path="%41"/>
+   <linked-el length="49" name="%52" offset="7877" path="%41"/>
+   <linked-el length="44" name="%52" offset="7496" path="%41"/>
+   <linked-el length="28" name="%52" offset="5895" path="%41"/>
+   <linked-el length="42" name="%52" offset="650" path="%41"/>
+   <linked-el length="31" name="%52" offset="4907" path="%41"/>
+   <linked-el length="43" name="%52" offset="8334" path="%41"/>
+   <linked-el length="46" name="%53" offset="3601" path="%1"/>
+   <linked-el length="23" name="%54" offset="6442" path="%3"/>
+   <linked-el length="29" name="%55" offset="6337" path="%3"/>
+   <linked-el length="14" name="%55" offset="5682" path="%3"/>
+   <linked-el length="15" name="%55" offset="5871" path="%3"/>
+   <linked-el length="35" name="%55" offset="6271" path="%3"/>
+   <linked-el length="15" name="%55" offset="5776" path="%3"/>
+   <linked-el length="12" name="%55" offset="5591" path="%3"/>
+   <linked-el length="12" name="%55" offset="6155" path="%3"/>
+   <linked-el length="43" name="%56" offset="5103" path="%1"/>
+   <linked-el length="30" name="%57" offset="5279" path="%3"/>
+   <linked-el length="23" name="%58" offset="6442" path="%3"/>
+   <linked-el length="26" name="%59" offset="7040" path="%3"/>
+   <linked-el length="48" name="%60" offset="7698" path="%1"/>
+   <linked-el length="42" name="%61" offset="7872" path="%1"/>
+   <linked-el length="11" name="%62" offset="7092" path="%3"/>
+   <linked-el length="34" name="%62" offset="7305" path="%3"/>
+   <linked-el length="23" name="%62" offset="7419" path="%3"/>
+   <linked-el length="22" name="%63" offset="5399" path="%3"/>
+   <linked-el length="34" name="%64" offset="6736" path="%41"/>
+   <linked-el length="30" name="%64" offset="7985" path="%41"/>
+   <linked-el length="44" name="%64" offset="4691" path="%41"/>
+   <linked-el length="25" name="%64" offset="5779" path="%41"/>
+   <linked-el length="28" name="%64" offset="8534" path="%41"/>
+   <linked-el length="24" name="%64" offset="5723" path="%41"/>
+   <linked-el length="30" name="%64" offset="5598" path="%41"/>
+   <linked-el length="60" name="%64" offset="7296" path="%41"/>
+   <linked-el length="47" name="%64" offset="8704" path="%41"/>
+   <linked-el length="55" name="%64" offset="9632" path="%41"/>
+   <linked-el length="57" name="%64" offset="6143" path="%41"/>
+   <linked-el length="28" name="%64" offset="5474" path="%41"/>
+   <linked-el length="27" name="%64" offset="8386" path="%41"/>
+   <linked-el length="44" name="%64" offset="8481" path="%41"/>
+   <linked-el length="26" name="%64" offset="5030" path="%41"/>
+   <linked-el length="47" name="%64" offset="7717" path="%41"/>
+   <linked-el length="49" name="%64" offset="7877" path="%41"/>
+   <linked-el length="44" name="%64" offset="7496" path="%41"/>
+   <linked-el length="28" name="%64" offset="5895" path="%41"/>
+   <linked-el length="42" name="%64" offset="650" path="%41"/>
+   <linked-el length="67" name="%64" offset="6348" path="%41"/>
+   <linked-el length="31" name="%64" offset="4907" path="%41"/>
+   <linked-el length="43" name="%64" offset="8334" path="%41"/>
+   <linked-el length="42" name="%65" offset="2126" path="%1"/>
+   <linked-el length="44" name="%66" offset="3420" path="%1"/>
+   <linked-el length="22" name="%67" offset="2088" path="%3"/>
+   <linked-el length="25" name="%68" offset="2392" path="%3"/>
+   <linked-el length="25" name="%68" offset="3195" path="%3"/>
+   <linked-el length="12" name="%69" offset="515" path="%19"/>
+   <linked-el length="12" name="%69" offset="851" path="%19"/>
+   <linked-el length="22" name="%69" offset="335" path="%19"/>
+   <linked-el length="10" name="%69" offset="495" path="%19"/>
+   <linked-el length="22" name="%69" offset="671" path="%19"/>
+   <linked-el length="10" name="%69" offset="831" path="%19"/>
+   <linked-el length="27" name="%69" offset="583" path="%19"/>
+   <linked-el length="21" name="%69" offset="456" path="%19"/>
+   <linked-el length="21" name="%69" offset="792" path="%19"/>
+   <linked-el length="41" name="%70" offset="2300" path="%1"/>
+   <linked-el length="47" name="%71" offset="8054" path="%1"/>
+   <linked-el length="49" name="%72" offset="8628" path="%1"/>
+   <linked-el length="30" name="%73" offset="5279" path="%3"/>
+   <linked-el length="37" name="%73" offset="685" path="%45"/>
+   <linked-el length="37" name="%73" offset="866" path="%45"/>
+   <linked-el length="23" name="%74" offset="5956" path="%3"/>
+   <linked-el length="12" name="%75" offset="851" path="%19"/>
+   <linked-el length="12" name="%76" offset="515" path="%19"/>
+   <linked-el length="45" name="%77" offset="8229" path="%1"/>
+   <linked-el length="45" name="%77" offset="2847" path="%1"/>
+   <linked-el length="46" name="%77" offset="8866" path="%1"/>
+   <linked-el length="43" name="%77" offset="993" path="%1"/>
+   <linked-el length="48" name="%77" offset="8417" path="%1"/>
+   <linked-el length="45" name="%77" offset="2668" path="%1"/>
+   <linked-el length="45" name="%77" offset="4331" path="%1"/>
+   <linked-el length="46" name="%77" offset="9448" path="%1"/>
+   <linked-el length="41" name="%77" offset="820" path="%1"/>
+   <linked-el length="49" name="%77" offset="8628" path="%1"/>
+   <linked-el length="46" name="%77" offset="9267" path="%1"/>
+   <linked-el length="47" name="%77" offset="8054" path="%1"/>
+   <linked-el length="43" name="%77" offset="5103" path="%1"/>
+   <linked-el length="33" name="%77" offset="1202" path="%1"/>
+   <linked-el length="51" name="%77" offset="4146" path="%1"/>
+   <linked-el length="41" name="%77" offset="2300" path="%1"/>
+   <linked-el length="42" name="%77" offset="4668" path="%1"/>
+   <linked-el length="52" name="%77" offset="9080" path="%1"/>
+   <linked-el length="44" name="%77" offset="2490" path="%1"/>
+   <linked-el length="47" name="%77" offset="3962" path="%1"/>
+   <linked-el length="42" name="%77" offset="7872" path="%1"/>
+   <linked-el length="44" name="%77" offset="3778" path="%1"/>
+   <linked-el length="42" name="%77" offset="2126" path="%1"/>
+   <linked-el length="43" name="%77" offset="5321" path="%1"/>
+   <linked-el length="42" name="%77" offset="4501" path="%1"/>
+   <linked-el length="45" name="%77" offset="3024" path="%1"/>
+   <linked-el length="48" name="%77" offset="7698" path="%1"/>
+   <linked-el length="41" name="%77" offset="1937" path="%1"/>
+   <linked-el length="46" name="%77" offset="3601" path="%1"/>
+   <linked-el length="44" name="%77" offset="3420" path="%1"/>
+   <linked-el length="44" name="%77" offset="3225" path="%1"/>
+   <linked-el length="45" name="%78" offset="2668" path="%1"/>
+   <linked-el length="45" name="%79" offset="8229" path="%1"/>
+   <linked-el length="45" name="%79" offset="2847" path="%1"/>
+   <linked-el length="46" name="%79" offset="8866" path="%1"/>
+   <linked-el length="43" name="%79" offset="993" path="%1"/>
+   <linked-el length="48" name="%79" offset="8417" path="%1"/>
+   <linked-el length="45" name="%79" offset="2668" path="%1"/>
+   <linked-el length="45" name="%79" offset="4331" path="%1"/>
+   <linked-el length="46" name="%79" offset="9448" path="%1"/>
+   <linked-el length="41" name="%79" offset="820" path="%1"/>
+   <linked-el length="49" name="%79" offset="8628" path="%1"/>
+   <linked-el length="46" name="%79" offset="9267" path="%1"/>
+   <linked-el length="47" name="%79" offset="8054" path="%1"/>
+   <linked-el length="43" name="%79" offset="5103" path="%1"/>
+   <linked-el length="51" name="%79" offset="4146" path="%1"/>
+   <linked-el length="41" name="%79" offset="2300" path="%1"/>
+   <linked-el length="42" name="%79" offset="4668" path="%1"/>
+   <linked-el length="52" name="%79" offset="9080" path="%1"/>
+   <linked-el length="44" name="%79" offset="2490" path="%1"/>
+   <linked-el length="47" name="%79" offset="3962" path="%1"/>
+   <linked-el length="42" name="%79" offset="7872" path="%1"/>
+   <linked-el length="44" name="%79" offset="3778" path="%1"/>
+   <linked-el length="42" name="%79" offset="2126" path="%1"/>
+   <linked-el length="43" name="%79" offset="5321" path="%1"/>
+   <linked-el length="42" name="%79" offset="4501" path="%1"/>
+   <linked-el length="45" name="%79" offset="3024" path="%1"/>
+   <linked-el length="48" name="%79" offset="7698" path="%1"/>
+   <linked-el length="41" name="%79" offset="1937" path="%1"/>
+   <linked-el length="46" name="%79" offset="3601" path="%1"/>
+   <linked-el length="44" name="%79" offset="3420" path="%1"/>
+   <linked-el length="44" name="%79" offset="3225" path="%1"/>
+   <linked-el length="26" name="%80" offset="2003" path="%3"/>
+   <linked-el length="22" name="%80" offset="2088" path="%3"/>
+   <linked-el length="33" name="%81" offset="1202" path="%1"/>
+   <linked-el length="43" name="%82" offset="5321" path="%1"/>
+   <linked-el length="44" name="%83" offset="2490" path="%1"/>
+   <linked-el length="12" name="%84" offset="851" path="%19"/>
+   <linked-el length="34" name="%85" offset="2294" path="%3"/>
+   <linked-el length="25" name="%85" offset="2392" path="%3"/>
+   <linked-el length="25" name="%85" offset="3195" path="%3"/>
+   <linked-el length="44" name="%86" offset="3778" path="%1"/>
+   <linked-el length="14" name="%87" offset="6623" path="%3"/>
+   <linked-el length="14" name="%87" offset="6742" path="%3"/>
+   <linked-el length="14" name="%87" offset="6857" path="%3"/>
+   <linked-el length="14" name="%87" offset="6968" path="%3"/>
+   <linked-el length="35" name="%88" offset="1024" path="%3"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="ClientePFBean.clienteSelecionado.estado" value="%0"/>
+  <alias path="/SARE/WebContent/inputs.xhtml" value="%3"/>
+  <alias path="autoCompleteView.completeText" value="%2"/>
+  <alias path="car.brand" value="%4"/>
+  <alias path="/SARE/src/com/sare/ManagedBean/ClienteBeanPJ.java" value="%5"/>
+  <alias path="ClientePFBean.clienteSelecionado.cep" value="%8"/>
+  <alias path="dtBasicView" value="%9"/>
+  <alias path="car.year" value="%10"/>
+  <alias path="editorView" value="%11"/>
+  <alias path="car.id" value="%13"/>
+  <alias path="ClientePFBean.clienteSelecionado.mae" value="%14"/>
+  <alias path="checkboxView.selectedCities2" value="%15"/>
+  <alias path="orderListView" value="%16"/>
+  <alias path="theme.name" value="%17"/>
+  <alias path="e.nome" value="%18"/>
+  <alias path="ClientePFBean.clienteSelecionado.obs2cnh" value="%20"/>
+  <alias path="/SARE/src/com/sare/entidades/ClientePF.java" value="%21"/>
+  <alias path="/SARE/src/com/sare/ManagedBean/ClienteBean.java" value="%23"/>
+  <alias path="/SARE/src/com/sare/entidades/ClientePJ.java" value="%24"/>
+  <alias path="editorView.text" value="%25"/>
+  <alias path="ClientePFBean.clienteSelecionado.nacionalidade" value="%26"/>
+  <alias path="/SARE/WebContent/graficos.xhtml" value="%45"/>
+  <alias path="clienteBean" value="%27"/>
+  <alias path="ClientePFBean.clienteSelecionado.dtnasc" value="%28"/>
+  <alias path="/SARE/WebContent/cadpf.xhtml" value="%22"/>
+  <alias path="ClientePFBean.clienteSelecionado.categoria" value="%29"/>
+  <alias path="ClientePFBean.clienteSelecionado.facebook" value="%30"/>
+  <alias path="ClientePFBean.clienteSelecionado.nome" value="%31"/>
+  <alias path="/SARE/WebContent/NewFile.xhtml" value="%19"/>
+  <alias path="ClientePFBean.clienteSelecionado.naturalidade" value="%32"/>
+  <alias path="doc" value="%33"/>
+  <alias path="/SARE/src/com/sare/ManagedBean/MeuBean.java" value="%34"/>
+  <alias path="ClientePFBean.clienteSelecionado.obs1cnh" value="%35"/>
+  <alias path="car.color" value="%36"/>
+  <alias path="ClientePFBean.clienteSelecionado.validade" value="%37"/>
+  <alias path="ClientePFBean.clienteSelecionado.cpf" value="%38"/>
+  <alias path="clienteBeanPJ" value="%39"/>
+  <alias path="/SARE/src/com/sare/ManagedBean/ContasAReceberBean.java" value="%40"/>
+  <alias path="city" value="%42"/>
+  <alias path="ClientePFBean.clienteSelecionado.pai" value="%43"/>
+  <alias path="chartView.animatedModel1" value="%44"/>
+  <alias path="chartView.animatedModel2" value="%46"/>
+  <alias path="dataGridView" value="%47"/>
+  <alias path="radioView.city2" value="%48"/>
+  <alias path="ClientePFBean.clienteSelecionado.cidade" value="%49"/>
+  <alias path="/SARE/WebContent/cadpj.xhtml" value="%6"/>
+  <alias path="theme.displayName" value="%50"/>
+  <alias path="/SARE/WebContent/editor.xhtml" value="%12"/>
+  <alias path="ClientePFBean.clienteSelecionado.numcnh" value="%51"/>
+  <alias path="/SARE/src/com/sare/entidades/ContasAReceber.java" value="%52"/>
+  <alias path="ClientePFBean.clienteSelecionado.celular" value="%53"/>
+  <alias path="treeIconView" value="%54"/>
+  <alias path="car" value="%55"/>
+  <alias path="ClientePFBean.clienteSelecionado.obs2" value="%56"/>
+  <alias path="chartView.lineModel1" value="%57"/>
+  <alias path="treeIconView.root" value="%58"/>
+  <alias path="orderListView.themes" value="%59"/>
+  <alias path="ClientePFBean.clienteSelecionado.permissao" value="%60"/>
+  <alias path="ClientePFBean.clienteSelecionado.acc" value="%61"/>
+  <alias path="theme" value="%62"/>
+  <alias path="dtBasicView.cars" value="%63"/>
+  <alias path="contasAReceberBean" value="%64"/>
+  <alias path="ClientePFBean.clienteSelecionado.rua" value="%65"/>
+  <alias path="ClientePFBean.clienteSelecionado.fone" value="%66"/>
+  <alias path="radioView.cities" value="%67"/>
+  <alias path="checkboxView.cities" value="%68"/>
+  <alias path="meuBean" value="%69"/>
+  <alias path="ClientePFBean.clienteSelecionado.nr" value="%70"/>
+  <alias path="ClientePFBean.clienteSelecionado.registro" value="%71"/>
+  <alias path="ClientePFBean.clienteSelecionado.primeirahab" value="%72"/>
+  <alias path="chartView" value="%73"/>
+  <alias path="dataGridView.cars" value="%74"/>
+  <alias path="c" value="%75"/>
+  <alias path="e" value="%76"/>
+  <alias path="ClientePFBean" value="%77"/>
+  <alias path="ClientePFBean.clienteSelecionado.bairro" value="%78"/>
+  <alias path="ClientePFBean.clienteSelecionado" value="%79"/>
+  <alias path="radioView" value="%80"/>
+  <alias path="ClientePFBean.salvar" value="%81"/>
+  <alias path="ClientePFBean.clienteSelecionado.mark" value="%82"/>
+  <alias path="/SARE/WebContent/clientebuscar.xhtml" value="%7"/>
+  <alias path="ClientePFBean.clienteSelecionado.compl" value="%83"/>
+  <alias path="c.nome" value="%84"/>
+  <alias path="checkboxView" value="%85"/>
+  <alias path="ClientePFBean.clienteSelecionado.email" value="%86"/>
+  <alias path="doc.name" value="%87"/>
+  <alias path="autoCompleteView" value="%88"/>
+  <alias path="/SARE/WebContent/contasareceber.xhtml" value="%41"/>
+  <alias path="/SARE/WebContent/cadfunc.xhtml" value="%1"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/facelets">
+   <prefix>ui</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+  <uri value="http://primefaces.org/ui">
+   <prefix>p</prefix>
+  </uri>
+ </uris>
+</kb-project>

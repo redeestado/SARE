@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<h:inputHidden id="clipj" value="#{clienteBeanPJ.clientePJ.id}" />
+			<h:inputHidden id="cliPF" value="#{clienteBean.clientePF.id}" />
+			<div class="ui-fluid" align="center">
+
+				<br />
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="Pessoa Jurídica">
+						<p:dataTable value="#{clienteBeanPJ.listarClientesPJ}"
+							var="clientePJ" paginator="true" rows="10"
+							rowsPerPageTemplate="5, 10, 15" paginatorPosition="top"
+							paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+
+							<p:column headerText="Razão Social" filterBy="#{clienteBeanPJ.clientePJ.nome}"
+								filterMatchMode="contains">
+								<h:outputText value="#{clientePJ.nome}" />
+							</p:column>
+
+							<p:column headerText="CNPJ" filterBy="#{clienteBeanPJ.clientePJ.cnpj}"
+								filterMatchMode="#{clientePJ.cnpj}">
+								<h:outputText value="#{clientePJ.cnpj}" />
+							</p:column>
+							<p:column headerText="Cidade">
+								<h:outputText value="#{clientePJ.cidade}" />
+							</p:column>
+
+							<p:column headerText="Telefone">
+								<h:outputText value="#{clientePJ.fone}" />
+							</p:column>
+
+							<p:column headerText="Ação">
+								<h:commandLink value="Editar"
+									action="#{clienteBeanPJ.editarClientePJ(clientePJ)}"
+									style="color:blue;" update="@form" />
+								<h:outputText value="    /    " />
+								<p:commandLink value="Excluir"
+									actionListener="#{clienteBeanPJ.prepararExclusaoCliPJ(clientePJ)}"
+									oncomplete="PF('confirmarExclusaoDialogClientePJ').show();"
+									style="color:red;" update="@form" />
+							</p:column>
+						</p:dataTable>
+					<p:confirmDialog id="excluirPJ" message="Deseja realmente excluir?"
+							widgetVar="confirmarExclusaoDialogClientePJ">
+							<h:commandButton id="simpj" value="Sim"
+								action="#{clienteBeanPJ.excluirClientePJ()}" />
+							<h:commandButton id="naopj" value="Não"
+								oncomplete="PF('confirmarExclusaoDialogClientePJ').hide()" />
+						</p:confirmDialog>
+						<p:button id="btnClientePJ"
+							value="Cadastrar novo cliente Pessoa Jurídica"
+							icon="ui-icon-pencil"
+							pessoajuridica = "cadpj.xhtml;"
+							outcome= "cadpj.xhtml" />				
+									&nbsp;
+							</p:tab>
+					
+					<p:tab disabled="false" title="Pessoa Física">
+						<div>
+							<p:dataTable value="#{clienteBean.listaClientes}" var="clientePF"
+								paginator="true" rows="10" rowsPerPageTemplate="5, 10, 15"
+								paginatorPosition="bottom"
+								paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+
+								<p:column headerText="Nome" filterBy="#{clientePF.nome}"
+									filterMacthMode="contains">
+									<h:outputText value="#{clientePF.nome}" />
+								</p:column>
+
+								<p:column headerText="CPF" filterBy="#{clientePF.cpf}"
+								    filterMatchMode="contains">
+									<h:outputText value="#{clientePF.cpf}" />
+								</p:column>
+								<p:column headerText="Cidade">
+									<h:outputText value="#{clientePF.cidade}" />
+								</p:column>
+
+								<p:column headerText="Telefone">
+									<h:outputText value="#{clientePF.fone}" />
+								</p:column>
+
+								<p:column headerText="Celular">
+									<h:outputText value="#{clientePF.celular}" />
+								</p:column>
+
+								<p:column headerText="Ação">
+									<h:commandLink  value="Editar"
+										action="#{clienteBean.editar(clientePF)}" style="color:blue;"
+										update="@form" />
+									<h:outputText value="    /    " />
+									<p:commandLink  value="Excluir"
+										actionListener="#{clienteBean.prepararExclusao(clientePF)}"
+										oncomplete="PF('confirmarExclusaoDialog').show();"
+										style="color:red;" update="@form" />
+								</p:column>
+							</p:dataTable>
+							<p:confirmDialog id="excluirPF" message="Deseja realmente excluir?"
+								widgetVar="confirmarExclusaoDialog">
+								<h:commandButton  value="Sim"
+									action="#{clienteBean.excluir()}" />
+								<h:commandButton  value="Não"
+									oncomplete="PF('confirmarExclusaoDialog').hide()" />
+
+							</p:confirmDialog>
+							<p:button id="btnClientePF"
+								value="Cadastrar novo cliente Pessoa Física"
+								outcome="/cadpf.xhtml" icon="ui-icon-pencilS" />
+							&nbsp;
+						</div>
+					</p:tab>
+				</p:accordionPanel>
+			</div>
+			<p:growl id="msgs" showDetail="true" />
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

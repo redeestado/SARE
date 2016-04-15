@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.3
+    http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.3.xsd">
+
+<url-mapping id="funcionario">
+<pattern value="/funcionario/"/>
+<view-id value="/cadfunc.xhtml"/>
+</url-mapping>
+
+<url-mapping id="inicio">
+<pattern value="/inicio/"/>
+<view-id value="/home.xhtml"/>
+</url-mapping>
+
+<url-mapping id="a_receber">
+<pattern value="/a_receber/"/>
+<view-id value="/contasareceber.xhtml"/>
+</url-mapping>
+
+<url-mapping id="a_pagar">
+<pattern value="/a_pagar/"/>
+<view-id value="/contasapagar.xhtml"/>
+</url-mapping>
+
+<url-mapping id="pesquisa">
+<pattern value="/pesquisar/"/>
+<view-id value="/clientebuscar.xhtml"/>
+</url-mapping>
+
+<url-mapping id="graficos">
+<pattern value="/graficos/"/>
+<view-id value="/graficos.xhtml"/>
+</url-mapping>
+
+<url-mapping id="pessoafisica">
+<pattern value="/pessoafisica/"/>
+<view-id value="/cadpf.xhtml"/>
+</url-mapping>
+
+<url-mapping id="pessoajuridica">
+<pattern value="/pessoajuridica/"/>
+<view-id value="/cadpj.xhtml"/>
+</url-mapping>
+
+
+
+
+</pretty-config>
+                                   		

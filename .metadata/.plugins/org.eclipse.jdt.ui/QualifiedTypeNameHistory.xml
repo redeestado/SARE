@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.hibernate.annotations.Index"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
+<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.sare.dao.Dao"/>
+<fullyQualifiedTypeName name="com.sare.ManagedBean.ContasAPagar"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.br.CPF"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.br.CNPJ"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="javax.validation.ConstraintValidator"/>
+<fullyQualifiedTypeName name="com.sare.util.jsf.FacesUtil"/>
+<fullyQualifiedTypeName name="com.sare.entidades.ContasAPagar"/>
+</qualifiedTypeNameHistroy>

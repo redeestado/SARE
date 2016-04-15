@@ -1,0 +1,46 @@
+package com.sare.ManagedBean;
+
+import java.util.ArrayList;
+
+import com.sare.dao.Dao;
+
+public class ContasAPagar {
+	
+	private String opcao;
+	private ContasAPagar contasapagar = new ContasAPagar();
+	private ArrayList<ContasAPagar> listarContasAPagar = new ArrayList<ContasAPagar>();
+	
+	
+   private void lancarContasAPagar(){
+	   
+	   
+	   
+	   
+   }
+	
+	public ContasAPagar getContasapagar() {
+		return contasapagar;
+	}
+
+	public void setContasapagar(ContasAPagar contasapagar) {
+		this.contasapagar = contasapagar;
+	}
+
+	public String getOpcao() {
+		return opcao;
+	}
+
+	public void setOpcao(String opcao) {
+		this.opcao = opcao;
+	}
+
+	@SuppressWarnings("unchecked")
+	public ArrayList<ContasAPagar> getListarContasAPagar() {
+		
+		return (ArrayList<ContasAPagar>) Dao.getInstance().listarObjetos(ContasAPagar.class);
+	}
+
+	public void setListarContasAPagar(ArrayList<ContasAPagar> listarContasAPagar) {
+		this.listarContasAPagar = listarContasAPagar;
+	}
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="Vendas efetuadas">
+
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta Vendas
+        					</f:facet>
+
+							<p:column headerText="Data">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Serviço">
+								<h:outputText value="DUT" />
+							</p:column>
+
+
+							<p:column headerText="Valor">
+								<h:outputText value="1.000,00" />
+							</p:column>
+
+							<p:column headerText="Pago">
+								<h:outputText value="500,00" />
+							</p:column>
+
+							<p:column headerText="A Pagar">
+								<h:outputText value="500,00" />
+							</p:column>
+
+							<p:column headerText="Forma Pagto">
+								<h:outputText value="Cartão débito" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+						</p:dataTable>
+						<p:outputLabel for="botaovendas" value="TOTAL R$ 2.000,00" />
+						<p:selectOneButton id="botaovendas">
+							<f:selectItem itemLabel="Total Hoje" itemValue="bot1" />
+							<f:selectItem itemLabel="Total 7 dias" itemValue="bot2" />
+							<f:selectItem itemLabel="Total mês anterior" itemValue="bot3" />
+							<f:selectItem itemLabel="Total mês atual" itemValue="bot4" />
+							<f:selectItem itemLabel="Imprimir" itemValue="bot4" />
+						</p:selectOneButton>
+
+					</p:tab>
+					<p:tab disabled="false" title="Por Vendedores">
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta Vendedores
+        					</f:facet>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+
+							<p:column headerText="Data">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Serviço">
+								<h:outputText value="DUT" />
+							</p:column>
+
+
+							<p:column headerText="Valor">
+								<h:outputText value="1.000,00" />
+							</p:column>
+
+							<p:column headerText="Pago">
+								<h:outputText value="500,00" />
+							</p:column>
+
+							<p:column headerText="A Pagar">
+								<h:outputText value="500,00" />
+							</p:column>
+
+							<p:column headerText="Forma Pagto">
+								<h:outputText value="Cartão débito" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+						</p:dataTable>
+						<p:outputLabel for="botaovendasv" value="TOTAL R$ 2.000,00" />
+						<p:selectOneButton id="botaovendasv">
+							<f:selectItem itemLabel="Total Hoje" itemValue="bot1v" />
+							<f:selectItem itemLabel="Total 7 dias" itemValue="bot2v" />
+							<f:selectItem itemLabel="Total mês anterior" itemValue="bot3v" />
+							<f:selectItem itemLabel="Total mês atual" itemValue="bot4v" />
+							<f:selectItem itemLabel="Imprimir" itemValue="bot4v" />
+						</p:selectOneButton>
+
+					</p:tab>
+
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

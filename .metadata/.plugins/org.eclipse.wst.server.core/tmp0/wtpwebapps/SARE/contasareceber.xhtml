@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<!-- <script language="JavaScript" type="text/javascript" src="MascaraValidacao.js"/> -->
+	<ui:define name="content">
+
+		<h:form>
+			<h:inputHidden value="#{contasAReceberBean.contasareceber.id}" />
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="Contas a Receber">
+
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="200,00" />
+							</p:column>
+
+
+							<p:column headerText="Pagamento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Grupo">
+								<h:outputText value="Entrada" />
+							</p:column>
+
+							<p:column headerText="SubGrupo">
+								<h:outputText value="Serviço DUT" />
+							</p:column>
+
+							<p:column headerText="Documento">
+								<h:outputText value="NF 1030" />
+							</p:column>
+
+							<p:column headerText="Histórico">
+								<h:outputText value="Recebimento serviço" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+						</p:dataTable>
+						<p:outputLabel for="botaoreceber" value="TOTAL R$ 2.000,00" />
+						<p:selectOneButton id="botaoreceber">
+							<f:selectItem itemLabel="Valor Hoje" itemValue="bot1" />
+							<f:selectItem itemLabel="Valor 7 dias" itemValue="bot2" />
+							<f:selectItem itemLabel="Valor 30 dias" itemValue="bot3" />
+							<f:selectItem itemLabel="Vencidos" itemValue="bot4" />
+							<f:selectItem itemLabel="Todos" itemValue="bot5" />
+						</p:selectOneButton>
+
+					</p:tab>
+					<p:tab disabled="false" title="Boletos">
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="200,00" />
+							</p:column>
+
+
+							<p:column headerText="Pagamento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Grupo">
+								<h:outputText value="Entrada" />
+							</p:column>
+
+							<p:column headerText="SubGrupo">
+								<h:outputText value="Serviço DUT" />
+							</p:column>
+
+							<p:column headerText="Documento">
+								<h:outputText value="NF 1030" />
+							</p:column>
+
+							<p:column headerText="Histórico">
+								<h:outputText value="Recebimento serviço" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+						</p:dataTable>
+						<p:outputLabel for="botaoboletos" value="" />
+						<p:selectOneButton id="botaoboletos">
+							<f:selectItem itemLabel="Selecionar" itemValue="botao1" />
+							<f:selectItem itemLabel="Selecionar todos" itemValue="botao2" />
+							<f:selectItem itemLabel="Enviar Email" itemValue="botao3" />
+							<f:selectItem itemLabel="Gerar Arquivo envio" itemValue="botao4" />
+							<f:selectItem itemLabel="Receber Arquivo" itemValue="botao5" />
+						</p:selectOneButton>
+
+					</p:tab>
+
+					<p:tab disabled="false" title="Efetuar Lançamento">
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="contasareceber"
+							value="#{contasAReceberBean.listaContasAReceber}" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="#{contasareceber.vencimento}" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="#{contasareceber.valor}" />
+							</p:column>
+
+
+							<p:column headerText="Pagamento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Grupo">
+								<h:outputText value="Entrada" />
+							</p:column>
+
+							<p:column headerText="SubGrupo">
+								<h:outputText value="Serviço DUT" />
+							</p:column>
+
+							<p:column headerText="Documento">
+								<h:outputText value="#{contasareceber.nossonr}" />
+							</p:column>
+
+							<p:column headerText="Histórico">
+								<h:outputText value="#{contasareceber.historico}" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="#{contasareceber.cpf}" />
+								<h:outputText value="#{contasareceber.cnpj}" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="#{contasareceber.cliente}" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+							<p:column headerText="Ação">
+								<h:commandLink value="Editar"
+									action="#{contasAReceberBean.editar(contasareceber)}"
+									style="color:blue;" update="@form" />
+								<h:outputText value="    /    " />
+								<p:commandLink value="Extornar"
+									actionListener="#{contasAReceberBean.prepararExclusao(contasareceber)}"
+									oncomplete="PF('confirmarExclusaoDialog').show();"
+									style="color:red;" update="@form" />
+							</p:column>
+						</p:dataTable>
+						<p:confirmDialog id="excluirC" message="Deseja realmente excluir?"
+							widgetVar="confirmarExclusaoDialog">
+							<h:commandButton id="sim" value="Sim"
+								action="#{contasAReceberBean.excluir()}" />
+							<h:commandButton id="nao" value="Não"
+								oncomplete="PF('confirmarExclusaoDialog').hide()" />
+						</p:confirmDialog>
+
+
+						<p:panel id="panellanc" visible="true"
+							header="Lançamento à receber" footer="inclusão"
+							style="margin-top:20px">
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-1,ui-grid-col-2" layout="grid"
+								styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="calendar" value="Vencto" />
+								<p:calendar id="calendar"
+									value="#{contasAReceberBean.contasareceber.vencimento}"
+									pattern="dd/MM/yyyy" />
+								<p:outputLabel for="valor" value="Valor" />
+								<p:inputMask maxlength="8" id="valor"
+									value="#{contasAReceberBean.contasareceber.valor}">
+									<pe:keyFilter regEx="/[\d\.\s,]" />
+								</p:inputMask>
+								<p:outputLabel for="ldocto" value="Docto." />
+								<p:inputText id="ldocto"
+									value="#{contasAReceberBean.contasareceber.nossonr}" />
+								<p:outputLabel for="lhistor" value="Histórico" />
+								<p:inputText id="lhistor"
+									value="#{contasAReceberBean.contasareceber.historico}" />
+								
+								<p:selectOneRadio id="cpfcnpj" value="#{contasAReceberBean.opcao}" >
+									<f:selectItem itemLabel="Cpf" itemValue="Cpf"/>
+									<f:selectItem itemLabel="Cnpj" itemValue="Cnpj" />
+									<p:ajax event="change" process="@this" update="resultado"/>
+								</p:selectOneRadio>
+								<p:outputPanel id="resultado">
+								<p:inputMask mask="999.999.999-99" id="cpf" value="#{contasAReceberBean.contasareceber.cpf}" rendered="#{contasAReceberBean.CPF}"/>
+								<p:inputMask mask="999.999.999-9999/99" id="cnpj" value="#{contasAReceberBean.contasareceber.cnpj}" rendered="#{contasAReceberBean.CNPJ}"/>
+								</p:outputPanel>
+								
+								<p:outputLabel for="lbenef" value="Nome" />
+								<p:inputText id="lbenef"
+									value="#{contasAReceberBean.contasareceber.cliente}" />
+
+								<p:selectOneMenu id="Grupo">
+									<f:selectItem itemLabel="Grupo" itemValue="" />
+									<f:selectItem itemLabel="Entrada" itemValue="Entrada" />
+									<f:selectItem itemLabel="Despesa fixa" itemValue="Despesa fixa" />
+									<f:selectItem itemLabel="Funcionários" itemValue="Funcionários" />
+									<f:selectItem itemLabel="Taxas" itemValue="Taxas" />
+								</p:selectOneMenu>
+								<p:selectOneMenu id="SubGrupo">
+									<f:selectItem itemLabel="SubGrupo" itemValue="" />
+									<f:selectItem itemLabel="Entrada" itemValue="Entrada" />
+									<f:selectItem itemLabel="Despesa fixa" itemValue="Despesa fixa" />
+									<f:selectItem itemLabel="Funcionários" itemValue="Funcionários" />
+									<f:selectItem itemLabel="Taxas" itemValue="Taxas" />
+								</p:selectOneMenu>
+
+								<p:splitButton id="spbtn"
+									action="#{contasAReceberBean.LancarContasAReceber}"
+									value="Lançar" type="button" icon="ui-icon-disk">
+									<p:menuitem value="Voltar" url="#" icon="ui-icon-extlink" />
+									<p:separator />
+									<p:menuitem value="Incluir" url="#"
+										icon="ui-icon-arrowrefresh-1-w" />
+									<p:menuitem value="Estornar" url="#" icon="ui-icon-close" />
+									<p:menuitem value="Alterar" url="#"
+										icon="ui-icon-arrowrefresh-2-w" />
+									<p:separator />
+									<p:menuitem value="Homepage" url="/home.xhtml"
+										icon="ui-icon-extlink" />
+								</p:splitButton>
+
+							</p:panelGrid>
+						</p:panel>
+
+					</p:tab>
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

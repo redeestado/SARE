@@ -1,0 +1,17 @@
+package com.sare.ManagedBean;
+
+import java.util.ArrayList;
+
+import com.sare.dao.Dao;
+public class ContasAPagarBean {
+	
+	private String opcao;
+	private ContasAPagarBean contasAPagar = new ContasAPagarBean();
+	
+	private ArrayList<ContasAPagarBean> listarContasAPagar = new ArrayList<ContasAPagarBean>();
+	
+	
+ 
+   
+	
+}

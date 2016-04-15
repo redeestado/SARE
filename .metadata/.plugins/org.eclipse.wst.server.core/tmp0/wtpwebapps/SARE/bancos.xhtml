@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="Bancos">
+
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+							
+								<p:column headerText="Data">
+									<h:outputText value="10/01/2016" />
+								</p:column>
+
+								<p:column headerText="Histórico">
+									<h:outputText value="Recebimento serviço" />
+								</p:column>
+
+								<p:column headerText="Entrada">
+									<h:outputText value="200,00" />
+								</p:column>
+
+								<p:column headerText="Saída">
+									<h:outputText value="" />
+								</p:column>
+
+								<p:column headerText="Saldo">
+									<h:outputText value="200,00" />
+								</p:column>
+
+								<p:column headerText="Grupo">
+									<h:outputText value="Entrada" />
+								</p:column>
+
+								<p:column headerText="SubGrupo">
+									<h:outputText value="Serviço DUT" />
+								</p:column>
+
+								<p:column headerText="Usuário">
+									<h:outputText value="Roberto" />
+								</p:column>
+					
+						</p:dataTable>
+
+						<p:selectOneMenu id="Banco">
+							<f:selectItem itemLabel="Conta Banco" itemValue="" />
+							<f:selectItem itemLabel="Bradesco" itemValue="Bradesco" />
+							<f:selectItem itemLabel="Caixa Federal" itemValue="Caixa Federal" />
+							<f:selectItem itemLabel="Itau" itemValue="Itau" />
+							<f:selectItem itemLabel="Santander" itemValue="Santander" />
+						</p:selectOneMenu>
+
+						<p:selectOneButton id="botaobanco">
+							<f:selectItem itemLabel="Editar Grupos" itemValue="bot1" />
+							<f:selectItem itemLabel="Imprimir mês anterior" itemValue="bot2" />
+							<f:selectItem itemLabel="Imprimir mês atual" itemValue="bot3" />
+						</p:selectOneButton>
+
+					</p:tab>
+
+					<p:tab disabled="false" title="Importar Extrato">
+						<p:selectOneMenu id="Contabanco">
+							<f:selectItem itemLabel="Selecione a Conta do Banco" itemValue="" />
+							<f:selectItem itemLabel="10252555-9" itemValue="10252555-9" />
+							<f:selectItem itemLabel="25622222-8" itemValue="25622222-8" />
+							<f:selectItem itemLabel="55688844-6" itemValue="55688844-6" />
+							<f:selectItem itemLabel="66625444-5" itemValue="66625444-5" />
+						</p:selectOneMenu>
+
+						<p:commandButton id="btn" value="Buscar Dados"
+							icon="ui-icon-pencil" type="button" />
+						<p:panelGrid columns="10"
+							columnClasses="ui-grid-col-1,ui-grid-col-2" layout="grid"
+							styleClass="ui-panelgrid-blank">
+						</p:panelGrid>
+					</p:tab>
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

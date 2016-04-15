@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form id="cli">
+
+			<div class="ui-fluid" align="center">
+
+				<br />
+				<p:panelGrid columns="8"
+					columnClasses="ui-grid-col-1,ui-grid-col-16" layout="grid"
+					styleClass="ui-panelgrid-blank">
+					<p:outputLabel for="cpf" value="CPF:" />
+					<p:inputMask mask="999.999.999-99" id="cpf" maxlength="14"
+						size="14" value="#{ClientePFBean.clienteSelecionado.cpf}"></p:inputMask>
+					<p:outputLabel for="nome" value="Nome:" />
+					<p:inputText id="nome" maxlength="50" size="40"
+						value="#{ClientePFBean.clienteSelecionado.nome}" />
+					<p:commandButton id="alterar" value="Alterar" icon="ui-icon-pencil"
+						type="button" action="/faces/home.xhtml" />
+					<p:commandButton actionListener="#{ClientePFBean.salvar}"
+						id="gravar" value="Gravar" icon="ui-icon-disk" type="button" />
+					<p:commandButton id="sair" value="Sair" icon="fa fa-edit"
+						type="button" action="/faces/home.xhtml" />
+				</p:panelGrid>
+				<p:separator />
+				<br />
+				<p:growl id="msgs" showDetail="true" />
+				<h2 style="margin-top: 0">Cadastro Funcionário</h2>
+				<p:tabView>
+					<p:tab title="Dados">
+						<div class="ui-fluid" align="left">
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-1,ui-grid-col-16" layout="grid"
+								styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="cep" value="CEP:" />
+								<p:inputMask mask="99999-999" maxlength="9" size="9" id="cep"
+									value="#{ClientePFBean.clienteSelecionado.cep}">
+								</p:inputMask>
+								<p:outputLabel for="rua" value="Rua:" />
+								<p:inputText id="rua" maxlength="40" size="30"
+									value="#{ClientePFBean.clienteSelecionado.rua}" />
+								<p:outputLabel for="numero" value="Número:" />
+								<p:inputText id="numero" maxlength="6" size="6"
+									value="#{ClientePFBean.clienteSelecionado.nr}" />
+								<p:outputLabel for="complemento" value="Complemento:" />
+								<p:inputText id="complemento" maxlength="10" size="10"
+									value="#{ClientePFBean.clienteSelecionado.compl}" />
+								<p:outputLabel for="bairro" value="Bairro:" />
+								<p:inputText id="bairro" maxlength="30" size="20"
+									value="#{ClientePFBean.clienteSelecionado.bairro}" />
+								<p:outputLabel for="cidade" value="Cidade:" />
+								<p:inputText id="cidade" maxlength="25" size="23"
+									value="#{ClientePFBean.clienteSelecionado.cidade}" />
+								<p:outputLabel for="estado" value="Estado:" />
+								<p:inputText id="estado" maxlength="2" size="2"
+									value="#{ClientePFBean.clienteSelecionado.estado}" />
+								<p:outputLabel for="dtnasc" value="Nascimento:" />
+								<p:inputMask mask="99/99/9999" maxlength="10" size="10"
+									id="dtnasc" value="#{ClientePFBean.clienteSelecionado.dtnasc}">
+								</p:inputMask>
+								<p:outputLabel for="fone" value="Fone:" />
+								<p:inputText id="fone" maxlength="20" size="13"
+									value="#{ClientePFBean.clienteSelecionado.fone} " />
+								<p:outputLabel for="celular" value="Celular:" />
+								<p:inputText id="celular" maxlength="20" size="13"
+									value="#{ClientePFBean.clienteSelecionado.celular}" />
+								<p:outputLabel for="email" value="EMail:" />
+								<p:inputText id="email" maxlength="30" size="17"
+									value='#{ClientePFBean.clienteSelecionado.email}' />
+								<p:outputLabel for="facebook" value="Facebook:" />
+								<p:inputText id="facebook" maxlength="30" size="15"
+									value="#{ClientePFBean.clienteSelecionado.facebook}" />
+								<p:outputLabel for="natural" value="Natural:" />
+								<p:inputText id="natural" maxlength="30" size="13"
+									value="#{ClientePFBean.clienteSelecionado.naturalidade}" />
+								<p:outputLabel for="estadon" value="Estado:" />
+								<p:inputText id="estadon" maxlength="2" size="2"
+									value="#{ClientePFBean.clienteSelecionado.estado}" />
+								<p:outputLabel for="mae" value="Mãe:" />
+								<p:inputText id="mae" maxlength="30" size="25"
+									value="#{ClientePFBean.clienteSelecionado.mae}" />
+								<p:outputLabel for="pai" value="Pai:" />
+								<p:inputText id="pai" maxlength="30" size="24"
+									value="#{ClientePFBean.clienteSelecionado.pai}" />
+								<p:outputLabel for="sit" value="Situação:" />
+								<p:selectOneRadio id="sit" >
+								    <f:selectItem itemLabel="Ativo" itemValue="Ativo"/>
+								    <f:selectItem itemLabel="Demitido" itemValue="Demitido"/>
+								</p:selectOneRadio>			
+								<p:outputLabel for="obs" value="Observação:" />
+								<p:inputText id="obs" maxlength="35" size="35"
+									value="#{ClientePFBean.clienteSelecionado.obs2}" />
+								<p:outputLabel for="mark" value="Mark:" />
+								<p:selectBooleanCheckbox id="mark">
+									<f:selectItem itemValue="mark" itemLabel="Mark"
+										value="#{ClientePFBean.clienteSelecionado.mark}" />
+								</p:selectBooleanCheckbox>
+								<p:outputLabel for="contatar" value="Contatar......:" />
+								<p:selectCheckboxMenu id="contatar" label="Contatar">
+									<f:selectItem itemLabel="Celular" itemValue="contcel" />
+									<f:selectItem itemLabel="Fone" itemValue="contfone" />
+									<f:selectItem itemLabel="SMS" itemValue="contsms" />
+									<f:selectItem itemLabel="Email" itemValue="contemail" />
+									<f:selectItem itemLabel="Messenger" itemValue="contfacebook" />
+									<f:selectItem itemLabel="Outro" itemValue="contoutro" />
+								</p:selectCheckboxMenu>
+							</p:panelGrid>
+						</div>
+					</p:tab>
+
+					<p:tab title="Documentos">
+						<br />
+						<div class="ui-fluid" align="left">
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-1,ui-grid-col-16" layout="grid"
+								styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="cp" value="CP:" />
+								<p:inputText id="cp" maxlength="20" size="10" value="" />
+								<p:outputLabel for="pis" value="PIS...........:" />
+								<p:inputText id="pis" maxlength="20" size="10" value="" />
+								<p:outputLabel for="rg" value="RG.......:" />
+								<p:inputText id="rg" maxlength="20" size="10" value="" />
+								<p:outputLabel for="passaporte" value="Passaporte:" />
+								<p:inputText id="passaporte" maxlength="20" size="10" value="" />
+								<p:outputLabel for="te" value="TE:" />
+								<p:inputText id="te" maxlength="20" size="10" value="" />
+								<p:outputLabel for="reservista" value="Reservista:" />
+								<p:inputText id="reservista" maxlength="20" size="10" value="" />
+								<p:outputLabel for="outro1" value="Outro 1:" />
+								<p:inputText id="outro1" maxlength="20" size="10" value="" />
+								<p:outputLabel for="outro2" value="Outro 2.......:" />
+								<p:inputText id="outro2" maxlength="20" size="10" value="" />
+							</p:panelGrid>
+						</div>
+					</p:tab>
+
+					<p:tab title="CNH">
+						<br />
+						<div class="ui-fluid" align="left">
+							<p:panelGrid columns="10"
+								columnClasses="ui-grid-col-1,ui-grid-col-20" layout="grid"
+								styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="permissao" value="Permissão:" />
+								<p:inputText id="permissao" maxlength="15" size="10"
+									value="#{ClientePFBean.clienteSelecionado.permissao}" />
+								<p:outputLabel for="acc" value="ACC.:" />
+								<p:inputText id="acc" maxlength="15" size="10"
+									value="#{ClientePFBean.clienteSelecionado.acc}" />
+								<p:outputLabel for="registro" value="Registro:" />
+								<p:inputText id="registro" maxlength="15" size="10"
+									value="#{ClientePFBean.clienteSelecionado.registro}" />
+								<p:outputLabel for="ncnh" value="CNH.:" />
+								<p:inputText id="ncnh" maxlength="15" size="10"
+									value="#{ClientePFBean.clienteSelecionado.numcnh}" />
+								<p:outputLabel for="categoria" value="Categoria:" />
+								<p:inputText id="categoria" maxlength="15" size="15"
+									value="#{ClientePFBean.clienteSelecionado.categoria}" />
+								<p:outputLabel for="dthab1" value="1ª Hab.:" />
+								<p:inputMask mask="99/99/9999" maxlength="10" size="10"
+									id="dthab1"
+									value="#{ClientePFBean.clienteSelecionado.primeirahab}">
+								</p:inputMask>
+								<p:outputLabel for="dtvalid" value="Validade:" />
+								<p:inputMask mask="99/99/9999" maxlength="10" size="10"
+									id="dtvalid"
+									value="#{ClientePFBean.clienteSelecionado.validade}">
+								</p:inputMask>
+								<p:outputLabel for="nacional" value="Nacionalidade:" />
+								<p:inputText id="nacional" maxlength="15" size="10"
+									value="#{ClientePFBean.clienteSelecionado.nacionalidade}" />
+								<p:outputLabel for="obs1cnh" value="Obs1.:" />
+								<p:inputText id="obs1cnh" maxlength="25" size="23"
+									value="#{ClientePFBean.clienteSelecionado.obs1cnh}" />
+								<p:outputLabel for="obs2cnh" value="Obs2.:" />
+								<p:inputText id="obs2cnh" maxlength="25" size="23"
+									value="#{ClientePFBean.clienteSelecionado.obs2cnh}" />
+							</p:panelGrid>
+						</div>
+					</p:tab>
+					<p:tab title="Funcionais">
+						<div class="ui-fluid" align="left">
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-2,ui-grid-col-16" layout="grid"
+								styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="dtaf" value="Data de Admissão:" />
+								<p:inputText id="dtaf" maxlength="8" size="10" value="" />
+								<p:outputLabel for="dtdf" value="Demissão:" />
+								<p:inputText id="dtdf" maxlength="8" size="10" value="" />
+								<p:outputLabel for="salf" value="Salário...:" />
+								<p:inputText id="salf" maxlength="12" size="10" value="" />
+								<p:outputLabel for="CBPOf" value="CBPO....:" />
+								<p:inputText id="CBPOf" maxlength="15" size="10" value="" />
+								<p:outputLabel for="Cargof" value="Cargo:" />
+								<p:inputText id="Cargof" maxlength="20" size="10" value="" />
+								<p:outputLabel for="Deptof" value="Depto.......:" />
+								<p:inputText id="Deptof" maxlength="20" size="10" value="" />
+								<p:outputLabel for="Contratof" value="Contrato:" />
+								<p:inputText id="Contratof" maxlength="15" size="10" value="" />
+								<p:outputLabel for="filhosf" value="Nr. filhos:" />
+								<p:inputText id="filhosf" maxlength="2" size="10" value="" />
+								<p:outputLabel for="Bancof" value="Banco:" />
+								<p:inputText id="Bancof" maxlength="20" size="10" value="" />
+								<p:outputLabel for="Agenciaf" value="Agência...:" />
+								<p:inputText id="Agenciaf" maxlength="20" size="10" value="" />
+								<p:outputLabel for="Contaf" value="Conta.....:" />
+								<p:inputText id="Contaf" maxlength="20" size="10" value="" />
+								<p:outputLabel for="Tipof" value="Tipo.......:" />
+								<p:inputText id="Tipof" maxlength="20" size="10" value="" />
+
+								<p:selectOneMenu id="Proventos1">
+									<f:selectItem itemLabel="Proventos" itemValue="" />
+									<f:selectItem itemLabel="Adiantamento de despesas"
+										itemValue="Adiantamento de despesas" />
+									<f:selectItem itemLabel="Ajuda moradia"
+										itemValue="Ajuda moradia" />
+									<f:selectItem itemLabel="Adicional periculosidade"
+										itemValue="Adicional periculosidade" />
+									<f:selectItem itemLabel="Adicional insalubridade"
+										itemValue="Adicional insalubridade" />
+									<f:selectItem itemLabel="Adicional noturno"
+										itemValue="Adicional noturno" />
+									<f:selectItem itemLabel="Adicional" itemValue="Adicional" />
+								</p:selectOneMenu>
+								<p:inputText id="adicional1" maxlength="12" size="15" value="" />
+
+								<p:selectOneMenu id="Proventos2">
+									<f:selectItem itemLabel="Proventos" itemValue="" />
+									<f:selectItem itemLabel="Adiantamento de despesas"
+										itemValue="Adiantamento de despesas" />
+									<f:selectItem itemLabel="Ajuda moradia"
+										itemValue="Ajuda moradia" />
+									<f:selectItem itemLabel="Adicional periculosidade"
+										itemValue="Adicional periculosidade" />
+									<f:selectItem itemLabel="Adicional insalubridade"
+										itemValue="Adicional insalubridade" />
+									<f:selectItem itemLabel="Adicional noturno"
+										itemValue="Adicional noturno" />
+									<f:selectItem itemLabel="Adicional" itemValue="Adicional" />
+								</p:selectOneMenu>
+								<p:inputText id="adicional2" maxlength="12" size="15" value="" />
+
+								<p:selectOneMenu id="Proventos3">
+									<f:selectItem itemLabel="Proventos" itemValue="" />
+									<f:selectItem itemLabel="Adiantamento de despesas"
+										itemValue="Adiantamento de despesas" />
+									<f:selectItem itemLabel="Ajuda moradia"
+										itemValue="Ajuda moradia" />
+									<f:selectItem itemLabel="Adicional periculosidade"
+										itemValue="Adicional periculosidade" />
+									<f:selectItem itemLabel="Adicional insalubridade"
+										itemValue="Adicional insalubridade" />
+									<f:selectItem itemLabel="Adicional noturno"
+										itemValue="Adicional noturno" />
+									<f:selectItem itemLabel="Adicional" itemValue="Adicional" />
+								</p:selectOneMenu>
+								<p:inputText id="adicional3" maxlength="12" size="15" value="" />
+
+								<p:selectOneMenu id="Proventos4">
+									<f:selectItem itemLabel="Proventos" itemValue="" />
+									<f:selectItem itemLabel="Adiantamento de despesas"
+										itemValue="Adiantamento de despesas" />
+									<f:selectItem itemLabel="Ajuda moradia"
+										itemValue="Ajuda moradia" />
+									<f:selectItem itemLabel="Adicional periculosidade"
+										itemValue="Adicional periculosidade" />
+									<f:selectItem itemLabel="Adicional insalubridade"
+										itemValue="Adicional insalubridade" />
+									<f:selectItem itemLabel="Adicional noturno"
+										itemValue="Adicional noturno" />
+									<f:selectItem itemLabel="Adicional" itemValue="Adicional" />
+								</p:selectOneMenu>
+								<p:inputText id="adicional4" maxlength="12" size="15" value="" />
+
+								<p:selectOneMenu id="Descontos1">
+									<f:selectItem itemLabel="Descontos" itemValue="" />
+									<f:selectItem itemLabel="Convênio médico"
+										itemValue="conveniomedico" />
+									<f:selectItem itemLabel="Convênio Odontológico"
+										itemValue="convenioodontologico" />
+									<f:selectItem itemLabel="Convênio Farmácia"
+										itemValue="conveniofarmacia" />
+									<f:selectItem itemLabel="Convênio" itemValue="convenio" />
+								</p:selectOneMenu>
+								<p:inputText id="desconto1" maxlength="12" size="15" value="" />
+
+								<p:selectOneMenu id="Descontos2">
+									<f:selectItem itemLabel="Descontos" itemValue="" />
+									<f:selectItem itemLabel="Convênio médico"
+										itemValue="conveniomedico" />
+									<f:selectItem itemLabel="Convênio Odontológico"
+										itemValue="convenioodontologico" />
+									<f:selectItem itemLabel="Convênio Farmácia"
+										itemValue="conveniofarmacia" />
+									<f:selectItem itemLabel="Convênio" itemValue="convenio" />
+								</p:selectOneMenu>
+								<p:inputText id="desconto2" maxlength="12" size="15" value="" />
+
+								<p:selectOneMenu id="Descontos3">
+									<f:selectItem itemLabel="Descontos" itemValue="" />
+									<f:selectItem itemLabel="Convênio médico"
+										itemValue="conveniomedico" />
+									<f:selectItem itemLabel="Convênio Odontológico"
+										itemValue="convenioodontologico" />
+									<f:selectItem itemLabel="Convênio Farmácia"
+										itemValue="conveniofarmacia" />
+									<f:selectItem itemLabel="Convênio" itemValue="convenio" />
+								</p:selectOneMenu>
+								<p:inputText id="desconto3" maxlength="12" size="15" value="" />
+
+								<p:selectOneMenu id="Descontos4">
+									<f:selectItem itemLabel="Descontos" itemValue="" />
+									<f:selectItem itemLabel="Convênio médico"
+										itemValue="conveniomedico" />
+									<f:selectItem itemLabel="Convênio Odontológico"
+										itemValue="convenioodontologico" />
+									<f:selectItem itemLabel="Convênio Farmácia"
+										itemValue="conveniofarmacia" />
+									<f:selectItem itemLabel="Convênio" itemValue="convenio" />
+								</p:selectOneMenu>
+								<p:inputText id="desconto4" maxlength="12" size="15" value="" />
+
+							</p:panelGrid>
+						</div>
+					</p:tab>
+					<p:tab title="Arquivo">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:outputLabel for="odoctos"
+								value="Arquivo digital de documentos:" />
+							<p:inputText id="odoctos" maxlength="20" size="20" />
+
+						</div>
+					</p:tab>
+
+					<p:tab title="Fotos e digitais">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:outputLabel for="fotosf"
+								value="Arquivo de fotos e biometria digital" />
+							<p:inputText id="fotosf" maxlength="10" size="10" />
+						</div>
+					</p:tab>
+
+					<p:tab title="Filhos">
+						<br />
+						<div class="ui-fluid" align="center">
+
+							<p:dataTable var="pfilho" value="tabelafilho" reflow="true">
+
+								<f:facet name="header">
+            							Relação de filhos do funcionário
+        							</f:facet>
+								<p:column headerText="Documento">
+									<h:outputText value="campo doc" />
+								</p:column>
+
+								<p:column headerText="Nome">
+									<h:outputText value="campo nome" />
+								</p:column>
+
+								<p:column headerText="Nascimento">
+									<h:outputText value="campo dtnasc" />
+								</p:column>
+
+								<p:column headerText="Idade">
+									<h:outputText value="campo idade" />
+								</p:column>
+								
+								<p:column headerText="Certidão">
+									<h:outputText value="campo imagem" />
+								</p:column>
+								
+							</p:dataTable>
+								<p:selectOneButton id="botaofilhos">
+									<f:selectItem itemLabel="Incluir" itemValue="bot1" />
+									<f:selectItem itemLabel="Alterar Registro" itemValue="bot2" />
+									<f:selectItem itemLabel="Apagar registro" itemValue="bot3" />
+									<f:selectItem itemLabel="Incluir Certidão" itemValue="bot4" />
+								</p:selectOneButton>
+							
+						</div>
+					</p:tab>
+
+					<p:tab title="Ocorrências">
+						<br />
+						<div class="ui-fluid" align="left">
+							<p:panelGrid columns="7"
+								columnClasses="ui-grid-col-1,ui-grid-col-18" layout="grid"
+								styleClass="ui-panelgrid-blank">
+
+								<p:outputLabel for="dtocorr" value="Data" />
+								<p:calendar id="dtocorr" />
+								<p:outputLabel for="Tipo" value="Tipo" />
+								<p:selectOneMenu id="Tipo">
+									<f:selectItem itemLabel="Ocorrência" itemValue="" />
+									<f:selectItem itemLabel="Falta injustificada"
+										itemValue="Falta injustificada" />
+									<f:selectItem itemLabel="Atraso" itemValue="Atraso" />
+									<f:selectItem itemLabel="Falta justificada"
+										itemValue="falta justificada" />
+									<f:selectItem itemLabel="Aumento salarial"
+										itemValue="Aumento salarial" />
+								</p:selectOneMenu>
+
+								<p:outputLabel for="Obs" value="Observação" />
+								<p:inputText id="Obs" maxlength="30" size="30" />
+
+								<p:commandButton id="gravar" value="Gravar" icon="ui-icon-disk"
+									type="button" />
+							</p:panelGrid>
+
+							<p:dataTable scrollHeight="300" var="controle"
+								value="tabcontrole" reflow="true">
+
+								<f:facet name="header">
+            							Ocorrências do funcionário
+        							</f:facet>
+								<p:column headerText="Data">
+									<h:outputText value="campo dataoc" />
+								</p:column>
+
+								<p:column headerText="Ocorrência">
+									<h:outputText value="campo ocor" />
+								</p:column>
+
+								<p:column headerText="Observação">
+									<h:outputText value="campo obs" />
+								</p:column>
+
+								<p:column headerText="Usuário">
+									<h:outputText value="ususolicit" />
+								</p:column>
+
+							</p:dataTable>
+						</div>
+					</p:tab>
+
+					<p:tab title="Pagamentos">
+						<br />
+						<div class="ui-fluid" align="center">
+
+							<p:dataTable scrollHeight="300" var="pagtosal" value="tabapagsal"
+								reflow="true">
+
+								<f:facet name="header">
+            							Remunerações
+        							</f:facet>
+								<p:column headerText="Data">
+									<h:outputText value="campo dataps" />
+								</p:column>
+
+								<p:column headerText="Valor">
+									<h:outputText value="campo vals" />
+								</p:column>
+
+								<p:column headerText="Tipo de Pagamento">
+									<h:outputText value="campo tipopags" />
+								</p:column>
+
+								<p:column headerText="Comprovante">
+									<h:outputText value="campo imagem" />
+								</p:column>
+
+								<p:column headerText="Usuário">
+									<h:outputText value="usuariops" />
+								</p:column>
+
+							</p:dataTable>
+							<p:selectOneButton id="botaopagar">
+								<f:selectItem itemLabel="Incluir Pagto" itemValue="bot1" />
+								<f:selectItem itemLabel="Alterar Registro" itemValue="bot2" />
+								<f:selectItem itemLabel="Apagar registro" itemValue="bot3" />
+								<f:selectItem itemLabel="Incluir Comprovante" itemValue="bot4" />
+							</p:selectOneButton>
+
+						</div>
+					</p:tab>
+
+				</p:tabView>
+
+			</div>
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

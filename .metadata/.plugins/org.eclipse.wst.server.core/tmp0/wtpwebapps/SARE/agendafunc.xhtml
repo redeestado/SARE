@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel  style="margin-top:20px">
+
+					<p:tab  disabled="false" title="Agenda">
+
+						<p:dataTable  rowSelectMode="true"  scrollRows="5" scrollWidth="200"  var="controle" value="tabcontrole"
+							reflow="true">
+
+							<f:facet name="header">
+            					Roberto
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Inclusão">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Compromisso">
+								<h:outputText value="ligar para o cliente Brasil Cacau" />
+							</p:column>
+
+							<p:column headerText="Realizado">
+								<p:selectBooleanCheckbox id="realizado" itemLabel="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Prioridade">
+								<p:selectOneRadio>								    
+								    <f:selectItem id="p1" itemLabel="1" />
+								    <f:selectItem id="p2" itemLabel="2" />
+								    <f:selectItem id="p3" itemLabel="3" />
+								</p:selectOneRadio>
+							</p:column>
+							
+							<p:column headerText="Usuário">
+								<h:outputText value="Rute" />
+							</p:column>
+
+						</p:dataTable>
+					</p:tab> 
+
+					<p:tab  disabled="false"  title="Incluir compromisso">
+					
+						<p:panelGrid columns="9"
+							columnClasses="ui-grid-col-1,ui-grid-col-2" layout="grid"
+							styleClass="ui-panelgrid-blank">
+														
+							<p:outputLabel for="calendar" value="Vencimento" />
+							<p:calendar id="calendar" />
+							<p:outputLabel for="radio" value="Prioridade" />
+							<p:selectOneRadio id="radio" layout="responsive" columns="3" >
+								<f:selectItem itemLabel="1" itemValue="lp1"/>
+								<f:selectItem itemLabel="2" itemValue="lp2" />
+								<f:selectItem itemLabel="3" itemValue="lp3" />
+							</p:selectOneRadio>					
+							<p:outputLabel for="compromisso" value="Compromisso" />
+							<p:inputText id="compromisso" />
+							<p:selectOneMenu id="Grupo">
+								<f:selectItem itemLabel="Roberto" itemValue="Roberto" />
+								<f:selectItem itemLabel="Rute" itemValue="Rute" />
+								<f:selectItem itemLabel="Daiane" itemValue="Daiane" />
+								<f:selectItem itemLabel="Cris" itemValue="Cris" />
+								<f:selectItem itemLabel="Ricardo" itemValue="Ricardo" />
+							</p:selectOneMenu>
+							<p:commandButton id="gravar" value="Gravar" icon="ui-icon-disk" type="button" />
+						</p:panelGrid>
+					
+					</p:tab>
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

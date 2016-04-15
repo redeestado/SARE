@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="Contas a Pagar">
+
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="200,00" />
+							</p:column>
+
+
+							<p:column headerText="Pagamento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Grupo">
+								<h:outputText value="Entrada" />
+							</p:column>
+
+							<p:column headerText="SubGrupo">
+								<h:outputText value="Serviço DUT" />
+							</p:column>
+
+							<p:column headerText="Documento">
+								<h:outputText value="NF 1030" />
+							</p:column>
+
+							<p:column headerText="Histórico">
+								<h:outputText value="Recebimento serviço" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+						</p:dataTable>
+						<p:outputLabel for="botaopagar" value="TOTAL R$ 2.000,00" />
+						<p:selectOneButton id="botaopagar">
+							<f:selectItem itemLabel="Valor Hoje" itemValue="botp1" />
+							<f:selectItem itemLabel="Valor 7 dias" itemValue="botp2" />
+							<f:selectItem itemLabel="Valor 30 dias" itemValue="botp3" />
+							<f:selectItem itemLabel="Vencidos" itemValue="botp4" />
+							<f:selectItem itemLabel="Todos" itemValue="botp5" />
+						</p:selectOneButton>
+
+					</p:tab>
+
+					<p:tab disabled="false" title="Efetuar Lançamento">
+					<p:dataTable rowSelectMode="true" scrollRows="5"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="200,00" />
+							</p:column>
+
+
+							<p:column headerText="Pagamento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Grupo">
+								<h:outputText value="Entrada" />
+							</p:column>
+
+							<p:column headerText="SubGrupo">
+								<h:outputText value="Serviço DUT" />
+							</p:column>
+
+							<p:column headerText="Documento">
+								<h:outputText value="NF 1030" />
+							</p:column>
+
+							<p:column headerText="Histórico">
+								<h:outputText value="Recebimento serviço" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+						</p:dataTable>
+						
+						<p:outputLabel for="botaolancp" value="" />
+						<p:selectOneButton id="botaolancp">
+							<f:selectItem itemLabel="Incluir" itemValue="botaolancp1" />
+							<f:selectItem itemLabel="Pagar" itemValue="botaolancp2" />
+							<f:selectItem itemLabel="Extornar" itemValue="botaolancp3" />
+							<f:selectItem itemLabel="Alterar" itemValue="botaolancp4" />
+							<f:selectItem itemLabel="Comprovante" itemValue="botaolancp5" />
+							<f:selectItem itemLabel="Enviar" itemValue="botaolancp4" />
+						</p:selectOneButton>
+					
+						<p:panel id="panellanc" visible="true"  header="Lançamento a pagar" footer="inclusão"
+							style="margin-top:20px">
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-1,ui-grid-col-2" layout="grid"
+								styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="calendar" value="Vencto" />
+								<p:calendar id="calendar" />
+								<p:outputLabel for="valor" value="Valor" />
+								<p:inputMask id="valor" mask="9.999.999,99" />
+								<p:outputLabel for="ldocto" value="Docto." />
+								<p:inputText id="ldocto" />
+								<p:outputLabel for="lhistor" value="Histórico" />
+								<p:inputText id="lhistor" />
+								<p:outputLabel for="lcpfcnpj" value="Cpf/Cnpj" />
+								<p:inputText id="lcpfcnpj" />
+								<p:outputLabel for="lbenef" value="Nome" />
+								<p:inputText id="lbenef" />
+								<input type="radio" ... id="r1" /><label for="r1">button text</label>
+
+								<p:selectOneMenu id="Grupo">
+									<f:selectItem itemLabel="Grupo" itemValue="" />
+									<f:selectItem itemLabel="Entrada" itemValue="Entrada" />
+									<f:selectItem itemLabel="Despesa fixa" itemValue="Despesa fixa" />
+									<f:selectItem itemLabel="Funcionários" itemValue="Funcionários" />
+									<f:selectItem itemLabel="Taxas" itemValue="Taxas" />
+								</p:selectOneMenu>
+								<p:selectOneMenu id="SubGrupo">
+									<f:selectItem itemLabel="SubGrupo" itemValue="" />
+									<f:selectItem itemLabel="Entrada" itemValue="Entrada" />
+									<f:selectItem itemLabel="Despesa fixa" itemValue="Despesa fixa" />
+									<f:selectItem itemLabel="Funcionários" itemValue="Funcionários" />
+									<f:selectItem itemLabel="Taxas" itemValue="Taxas" />
+								</p:selectOneMenu>
+
+								<p:splitButton id="spbtn" value="Lançar" type="button"
+									icon="ui-icon-disk">
+									<p:menuitem value="Voltar" url="#"
+										icon="ui-icon-extlink" />
+									<p:separator />
+									<p:menuitem value="Incluir" url="#"
+										icon="ui-icon-arrowrefresh-1-w" />
+									<p:menuitem value="Estornar" url="#" icon="ui-icon-close" />
+									<p:menuitem value="Alterar" url="#"
+										icon="ui-icon-arrowrefresh-2-w" />
+									<p:separator />
+									<p:menuitem value="Homepage" url="/faces/home.xhtml"
+										icon="ui-icon-extlink" />
+								</p:splitButton>
+
+							</p:panelGrid>
+						</p:panel>
+
+					</p:tab>
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="Clientes devedores">
+
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="200,00" />
+							</p:column>
+
+
+							<p:column headerText="Pagamento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Grupo">
+								<h:outputText value="Entrada" />
+							</p:column>
+
+							<p:column headerText="SubGrupo">
+								<h:outputText value="Serviço DUT" />
+							</p:column>
+
+							<p:column headerText="Documento">
+								<h:outputText value="NF 1030" />
+							</p:column>
+
+							<p:column headerText="Histórico">
+								<h:outputText value="Recebimento serviço" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+						</p:dataTable>
+						<p:outputLabel for="botaoreceber" value="TOTAL R$ 2.000,00" />
+						<p:selectOneButton id="botaoreceber">
+							<f:selectItem itemLabel="Valor Hoje" itemValue="bot1" />
+							<f:selectItem itemLabel="Valor 7 dias" itemValue="bot2" />
+							<f:selectItem itemLabel="Valor 30 dias" itemValue="bot3" />
+							<f:selectItem itemLabel="Mais de 30 dias" itemValue="bot4" />
+							<f:selectItem itemLabel="Todos" itemValue="bot5" />
+						</p:selectOneButton>
+
+					</p:tab>
+					<p:tab disabled="false" title="Cobrar">
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Conta
+        					</f:facet>
+
+							<p:column headerText="Vencimento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="200,00" />
+							</p:column>
+
+
+							<p:column headerText="Pagamento">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="Grupo">
+								<h:outputText value="Entrada" />
+							</p:column>
+
+							<p:column headerText="SubGrupo">
+								<h:outputText value="Serviço DUT" />
+							</p:column>
+
+							<p:column headerText="Documento">
+								<h:outputText value="NF 1030" />
+							</p:column>
+
+							<p:column headerText="Histórico">
+								<h:outputText value="Recebimento serviço" />
+							</p:column>
+
+							<p:column headerText="Cpf/Cnpj">
+								<h:outputText value="11.111.111/1111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Nome" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="Roberto" />
+							</p:column>
+							
+						</p:dataTable>
+						<p:outputLabel for="botaoboletos" value="" />
+						<p:selectOneButton id="botaoboletos">
+							<f:selectItem itemLabel="Selecionar" itemValue="botao1" />
+							<f:selectItem itemLabel="Selecionar todos" itemValue="botao2" />
+							<f:selectItem itemLabel="Enviar Email" itemValue="botao3" />
+							<f:selectItem itemLabel="Enviar boleto" itemValue="botao4" />							
+						</p:selectOneButton>
+
+					</p:tab>
+
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

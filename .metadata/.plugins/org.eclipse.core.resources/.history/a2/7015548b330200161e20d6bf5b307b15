@@ -1,0 +1,27 @@
+package com.sare.teste;
+
+import java.util.Date;
+
+import com.sare.dao.Dao;
+import com.sare.entidades.ClientePJ;
+
+public class ClientePJTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Dao dao = new Dao();
+	
+	ClientePJ cli = new ClientePJ();
+	
+	cli.setCnpj("999.999.999-9999/99");
+	cli.setNome("XURUPITAS");
+	cli.setDtcad(new Date());;
+	cli.setRua("Nelson Rampim");
+	cli.setNr("228");
+	cli.setBairro("Parque Industrial");
+	
+
+	Dao.getInstance().salvarObjeto(cli);
+	dao.salvarObjeto(cli);
+	}
+}

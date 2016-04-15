@@ -1,0 +1,5 @@
+package com.sare.dao;
+
+public interface Cep {
+
+}
