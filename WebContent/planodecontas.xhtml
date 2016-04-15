@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+			<div class="ui-fluid" align="center">
+				<br />
+				<h2 style="margin-top: 0">Plano de Contas</h2>
+				<p:separator />
+			</div>
+			<p:separator />
+			<div align="center">
+				<p:dataTable value="tabcontas" reflow="true">
+
+					<f:facet name="header">
+            			Plano de Contas Contábeis
+        			</f:facet>
+					<p:column headerText="Código">
+						<h:outputText value="1.1.1.01" />
+					</p:column>
+
+					<p:column headerText="Descrição">
+						<h:outputText value="Caixa" />
+					</p:column>
+
+				</p:dataTable>
+
+
+			</div>
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

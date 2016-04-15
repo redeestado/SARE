@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+			<div align="center">
+				<p:editor id="editor" widgetVar="editorWidget"
+					value="#{editorView.text}" width="800" height="400" />
+
+				<h:panelGrid width="800" columns="4" style="margin-top: 5px">
+				    		
+					<p:commandButton value="Abrir arquivo" update="display"
+						oncomplete="PF('dlg').show()" icon="ui-icon-disk" />
+								   
+					<p:commandButton value="Gravar arquivo" update="display"
+						oncomplete="PF('dlg').show()" icon="ui-icon-disk" />
+								
+					<p:commandButton value="Apagar texto" type="button"
+						onclick="PF('editorWidget').clear();" icon="ui-icon-close" />
+					
+					<p:commandButton  action="/faces/home.xhtml" value="Sair do editor" type="button"
+					 icon="ui-icon-close" />
+																
+				</h:panelGrid>
+
+				<p:dialog header="Content" widgetVar="dlg" showEffect="fade"
+					hideEffect="fade">
+					<h:outputText id="display" value="#{editorView.text}"
+						escape="false" />
+				</p:dialog>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

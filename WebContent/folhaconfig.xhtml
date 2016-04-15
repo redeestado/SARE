@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="Configurar Folha de Pagamento">
+
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Regras Gerais
+        					</f:facet>
+
+							<p:column headerText="Utilização">
+								<h:outputText value="Todos os meses" />
+							</p:column>
+
+							<p:column headerText="Salário de:">
+								<h:outputText value="800,00" />
+							</p:column>
+
+							<p:column headerText="Até o valor de:">
+								<h:outputText value="1.900,00" />
+							</p:column>
+
+							<p:column headerText="Tipo">
+								<p:selectBooleanCheckbox id="radiod"  itemLabel="Desconto" />
+							</p:column>
+
+							<p:column headerText="A pagar">
+								<p:selectBooleanCheckbox id="radiop" itemLabel="Provento" />
+							</p:column>							
+
+							<p:column headerText="Descrição">
+								<h:outputText value="INSS" />
+							</p:column>
+
+							<p:column headerText="Índice % referência">
+								<h:outputText value="8%" />
+							</p:column>
+
+							<p:column headerText="Valor quando fixo">
+								<h:outputText value="100,00" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="usuário" />
+							</p:column>
+						</p:dataTable>
+						
+						<p:outputLabel for="botaofr" value="" />
+						<p:selectOneButton id="botaofr">
+							<f:selectItem itemLabel="Lançar Nova Regra" itemValue="bot1" />
+							<f:selectItem itemLabel="Excluir Regra" itemValue="bot2" />
+						</p:selectOneButton>
+
+					</p:tab>
+					<p:tab disabled="false" title="Regra somente para o mês de pagamento">
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Folha do mês
+        					</f:facet>
+
+							<p:column headerText="Utilização">
+								<p:selectOneMenu id="regmes">
+								  <f:selectItem itemLabel="janeiro" itemValue="1" />
+								  <f:selectItem itemLabel="fevereiro" itemValue="2" />
+								  <f:selectItem itemLabel="março" itemValue="3" />
+								  <f:selectItem itemLabel="abril" itemValue="4" />
+								  <f:selectItem itemLabel="maio" itemValue="5" />
+								  <f:selectItem itemLabel="junho" itemValue="6" />
+								  <f:selectItem itemLabel="Julho" itemValue="7" />
+								  <f:selectItem itemLabel="agosto" itemValue="8" />
+								  <f:selectItem itemLabel="setembro" itemValue="9" />
+								  <f:selectItem itemLabel="outubro" itemValue="10" />
+								  <f:selectItem itemLabel="novembro" itemValue="11" />
+								  <f:selectItem itemLabel="dezembro" itemValue="12" />
+								</p:selectOneMenu>
+							</p:column>
+
+							<p:column headerText="Salário de:">
+								<h:outputText value="800,00" />
+							</p:column>
+
+							<p:column headerText="Até o valor de:">
+								<h:outputText value="1.900,00" />
+							</p:column>
+
+							<p:column headerText="Tipo">
+								<p:selectBooleanCheckbox id="radiodm" itemLabel="Desconto" />
+							</p:column>
+							<p:column headerText="A pagar">
+								<p:selectBooleanCheckbox id="radiopm" itemLabel="Provento" />
+							</p:column>							
+
+							<p:column headerText="Descrição">
+								<h:outputText value="INSS" />
+							</p:column>
+
+							<p:column headerText="Índice % referência">
+								<h:outputText value="8%" />
+							</p:column>
+
+							<p:column headerText="Valor quando fixo">
+								<h:outputText value="100,00" />
+							</p:column>
+
+							<p:column headerText="Usuário">
+								<h:outputText value="usuário" />
+							</p:column>
+						</p:dataTable>
+						
+						<p:outputLabel for="botaofrm" value="" />
+						<p:selectOneButton id="botaofrm">
+							<f:selectItem itemLabel="Lançar Nova Regra mês" itemValue="bot1" />
+							<f:selectItem itemLabel="Excluir Regra mês" itemValue="bot2" />
+						</p:selectOneButton>
+
+					</p:tab>
+
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,104 @@
+package com.sare.ManagedBean;
+
+import java.util.ArrayList;
+
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+
+import com.sare.dao.Dao;
+import com.sare.entidades.ContasAReceber;
+import com.sare.util.jsf.FacesUtil;
+
+@ManagedBean
+public class ContasAReceberBean {
+		private String opcao;
+		private ContasAReceber contasareceber = new ContasAReceber();
+		
+		
+		@SuppressWarnings("unused")
+		private ArrayList<ContasAReceber> listaContasAReceber = new ArrayList<ContasAReceber>();
+		
+		@PostConstruct
+	    public void init() {
+	        opcao = "Cnpj";
+	        
+	    }
+	
+		
+		public String LancarContasAReceber() {
+			System.out.println(contasareceber.toString());
+			try {
+				if (contasareceber.getId() >= 1) {
+					Dao.getInstance().salvarOuAtualizarObjeto(contasareceber);
+					FacesUtil.addInfoMessage("Cadastrado com sucesso!!!");
+					return "home.xhtml";
+				} else {
+					System.out.println(contasareceber.toString());
+					Dao.getInstance().salvarObjeto(contasareceber);
+					FacesUtil.addInfoMessage("Cadastrado com Sucesso!!!");
+					return "home.xhtml";
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			Limpar();
+			return "home.xhtml";
+
+		}
+		
+		private void Limpar() {
+			contasareceber = new ContasAReceber();
+
+		}
+
+		public ContasAReceber getContasareceber() {
+			return contasareceber;
+		}
+
+		public void setContasareceber(ContasAReceber contasareceber) {
+			this.contasareceber = contasareceber;
+		}
+		
+		@SuppressWarnings("unchecked")
+		public ArrayList<ContasAReceber> getListaContasAReceber() {
+			return  (ArrayList<ContasAReceber>) Dao.getInstance().listarObjetos(ContasAReceber.class);
+		}
+
+		public void setListaContasAReceber(ArrayList<ContasAReceber> listaContasAReceber) {
+			this.listaContasAReceber = listaContasAReceber;
+		}
+		
+		public void prepararExclusao(ContasAReceber contasareceber){
+			this.contasareceber = contasareceber;		
+		}
+			
+		public void excluir(){
+			 Dao.getInstance().deletarObjeto(contasareceber);
+			FacesUtil.addInfoMessage("excluído com Sucesso!!!");
+			
+		}
+		
+		public String editar(ContasAReceber contasareceber) {
+			this.contasareceber = contasareceber;
+			return "contasareceber.xhtml";
+		}
+		
+		public boolean isCPF(){
+	        return getOpcao()!=null && getOpcao().equals("Cpf");
+	    }
+	    public boolean isCNPJ(){
+	        return getOpcao()!=null && getOpcao().equals("Cnpj");
+	    }
+	    
+	 
+	    public String getOpcao() {
+	        return opcao;
+	    }
+	 
+	    public void setOpcao(String opcao) {
+	        this.opcao = opcao;
+	    }
+		
+	   
+}

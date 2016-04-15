@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+			<div class="ui-fluid" align="center">
+
+				<p:dataTable var="pfilho" value="tabelafilho" reflow="true">
+
+					<f:facet name="header">
+            				Ocorrências de Funcionários
+        			</f:facet>
+					<p:column headerText="Data">
+						<h:outputText value="campo data" />
+					</p:column>
+
+					<p:column headerText="CPF">
+						<h:outputText value="campo cpf" />
+					</p:column>
+
+					<p:column headerText="Nome">
+						<h:outputText value="campo nome" />
+					</p:column>
+
+					<p:column headerText="Tipo">
+						<h:outputText value="campo tipo" />
+					</p:column>
+
+					<p:column headerText="Observação">
+						<h:outputText value="campo obs" />
+					</p:column>
+					
+					<p:column headerText="Atestado">
+						<h:outputText value="campo imagem" />
+					</p:column>
+
+				</p:dataTable>
+				<p:selectOneButton id="botaoocorr">
+					<f:selectItem itemLabel="Incluir" itemValue="bot1" />
+					<f:selectItem itemLabel="Alterar Registro" itemValue="bot2" />
+					<f:selectItem itemLabel="Apagar registro" itemValue="bot3" />
+					<f:selectItem itemLabel="Incluir atestado" itemValue="bot4" />
+				</p:selectOneButton>
+
+			</div>
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

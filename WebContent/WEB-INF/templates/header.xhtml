@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+	  
+    <h:head>  
+		<style type="text/css">
+			.header {
+				width: 99%;
+				background-color: #302f31;
+				height: 52px;
+				padding: 10px;
+				margin: 5px 0;
+				margin-right: 1%;
+			}
+			.header a {
+				float: left;
+				margin-bottom: -10px;
+			}
+		</style>
+		
+    </h:head>
+	
+	<h:body>
+		<div class="header">
+			
+            <h:graphicImage library="images" name="logoredeestadob.png"/>
+		
+		 </div>	
+		<h:form>
+		<p:growl id="messages" showDetail="true" />
+
+		<p:menubar>
+			<p:submenu label="Atividades" icon="ui-icon-pencil" >
+																
+				<p:menuitem value="Clientes" url="/clientebuscar.xhtml" />				
+				<p:menuitem value="Serviços em andamento" url="/servand.xhtml" />
+				<p:separator />
+				<p:menuitem value="Editor de textos" url="/editor.xhtml" />
+				<p:separator />
+				<p:menuitem value="Home" url="/home.xhtml" />
+			</p:submenu>
+
+			<p:submenu label="Funcionários" icon="ui-icon-male">
+				<p:menuitem value="Agenda" url="/agendafunc.xhtml"/>
+				<p:menuitem value="Cadastro" url="/cadfunc.xhtml"/>
+				<p:menuitem value="Ocorrências" url="/ocorrfunc.xhtml"/>
+				<p:menuitem value="Relatórios" url="/relatfunc.xhtml"/>
+			</p:submenu>
+			
+			<p:submenu label="Financeiro" icon="ui-icon-calculator">
+				<p:menuitem value="Conta Caixa" url="/cx.xhtml"/>
+				<p:menuitem value="Conta Bancos" url="/bancos.xhtml"/>
+				<p:menuitem value="Contas a receber" url="/contasareceber.xhtml"/>
+				<p:menuitem value="Contas a pagar" url="/contasapagar.xhtml"/>
+				<p:menuitem value="Clientes devedores" url="/devedores.xhtml"/>
+			</p:submenu>
+			
+			<p:submenu label="Pessoal" icon="ui-icon-people">
+				<p:menuitem value="Controle de férias" url="#"/>
+				<p:menuitem value="Preparar folha de pagamento" url="#"/>
+				<p:menuitem value="Lançar proventos" url="#"/>
+				<p:menuitem value="Lançar descontos de convênios" url="#"/>
+				<p:menuitem value="Emitir folha de pagamento" url="#"/>
+				<p:menuitem value="Obrigações fiscais sobre a folha" url="#"/>
+				<p:menuitem value="Banco de horas" url="#"/>
+			</p:submenu>
+			
+			<p:submenu label="Fiscal" icon="ui-icon-refresh">
+				<p:menuitem value="Sistema Simples Federal" url="#"/>
+			</p:submenu>
+			
+			<p:submenu label="Contábil" icon="ui-icon-gear">
+				<p:menuitem value="Livro caixa" url="#"/>
+				<p:menuitem value="Balancete" url="#"/>
+				<p:menuitem value="Balanço" url="#"/>
+				<p:menuitem value="Controle sócios" url="#"/>
+				<p:menuitem value="Plano de contas" url="#"/>
+				<p:menuitem value="Configurar plano de contas" url="#"/>
+				<p:menuitem value="Controle Patrimonial" url="#"/>
+				<p:menuitem value="Controle arquivo" url="#"/>
+			</p:submenu>
+			
+			<p:submenu label="Gerencial" icon="ui-icon-search">
+				<p:menuitem value="Vendas" url="/vendas.xhtml"/>
+				<p:menuitem value="Gráficos" url="/graficos.xhtml"/>
+				<p:menuitem value="Configurar serviços" url="/confserv.xhtml"/>
+				<p:menuitem value="Cadastrar usuários" url="#"/>
+				<p:menuitem value="Alterar minha senha" url="#"/>
+			</p:submenu>
+
+			<f:facet name="options">				
+				<p:commandButton type="button" value="Sair" icon="ui-icon-extlink" />
+			</f:facet>
+		</p:menubar>
+		</h:form>
+	</h:body>
+</html>

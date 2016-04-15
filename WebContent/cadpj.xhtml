@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+	
+
+		<h:form id="cli">
+		<h:inputHidden value="#{clienteBeanPJ.clientePJ.id}" />
+			<div class="ui-fluid" align="center">
+
+				<br />
+				<p:panelGrid columns="8"
+					columnClasses="ui-grid-col-1,ui-grid-col-16" layout="grid"
+					styleClass="ui-panelgrid-blank">
+					<p:outputLabel for="cnpj" value="CNPJ:" />
+					<p:inputMask mask="999.999.999-9999/99" id="cnpj" maxlength="19"
+						size="15" value="#{clienteBeanPJ.clientePJ.cnpj}"></p:inputMask>
+					<p:outputLabel for="empresa" value="Nome:" />
+					<p:inputText id="empresa" maxlength="50" size="20"
+						value="#{clienteBeanPJ.clientePJ.nome}" />
+					<p:commandButton id="alterar" value="Alterar" icon="ui-icon-pencil"
+						action="#{clienteBeanPJ.atualizarCliPJ}"
+						update="@form" />
+					<p:commandButton id="gravar" value="Gravar" icon="ui-icon-disk"
+						action="#{clienteBeanPJ.cadastrarCliPJ}" update="@form" />
+					<p:commandButton id="sair" value="Sair" icon="fa fa-edit"
+						type="button" action="/home.xhtml" />
+				</p:panelGrid>
+				<p:separator />
+				<br />
+				<p:growl id="msgs" showDetail="true" />
+				<h2 style="margin-top: 0">Cadastro Pessoa Jurídica</h2>
+				<p:tabView>
+					<p:tab title="Dados">
+						<div class="ui-fluid" align="left">
+
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-1,ui-grid-col-16" layout="grid"
+								styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="cep" value="CEP:" />
+								<p:inputMask mask="99999-999" maxlength="9" size="9" id="cep" value="#{clienteBeanPJ.clientePJ.cep}">
+								</p:inputMask>
+								<p:outputLabel for="rua" value="Rua:" />
+								<p:inputText id="rua" maxlength="40" size="30" value="#{clienteBeanPJ.clientePJ.rua}"/>
+								<p:outputLabel for="numero" value="Número:" />
+								<p:inputText id="numero" maxlength="6" size="6" value="#{clienteBeanPJ.clientePJ.nr}"/>
+								<p:outputLabel for="complemento" value="Complemento:" />
+								<p:inputText id="complemento" maxlength="10" size="10" value="#{clienteBeanPJ.clientePJ.compl}" />
+								<p:outputLabel for="bairro" value="Bairro:" />
+								<p:inputText id="bairro" maxlength="30" size="20" value="#{clienteBeanPJ.clientePJ.bairro}"/>
+								<p:outputLabel for="cidade" value="Cidade:" />
+								<p:inputText id="cidade" maxlength="25" size="24" value="#{clienteBeanPJ.clientePJ.cidade}"/>
+								<p:outputLabel for="estado" value="Estado:" />
+								<p:inputText id="estado" maxlength="2" size="2" value="#{clienteBeanPJ.clientePJ.estado}"/>
+								<p:outputLabel for="fund" value="Fundação:" />
+								<p:inputMask mask="99/99/9999" maxlength="10" size="10"
+									id="fund" value="#{clienteBeanPJ.clientePJ.dtfund}">
+									<f:convertDateTime pattern="dd/MM/YYYY" />
+								</p:inputMask>
+								<p:outputLabel for="fone" value="Fone:" />
+								<p:inputText id="fone" maxlength="20" size="13" value="#{clienteBeanPJ.clientePJ.fone}" />
+								<p:outputLabel for="celular" value="Celular:" />
+								<p:inputText id="celular" maxlength="20" size="13" value="#{clienteBeanPJ.clientePJ.celular}"/>
+								<p:outputLabel for="email" value="EMail:" />
+								<p:inputText id="email" maxlength="30" size="16" value="#{clienteBeanPJ.clientePJ.email}"/>
+								<p:outputLabel for="facebook" value="Facebook:" />
+								<p:inputText id="facebook" maxlength="30" size="15" value="#{clienteBeanPJ.clientePJ.facebook}" />
+								<p:outputLabel for="obs" value="Obs.:" />
+								<p:inputText id="obs" maxlength="25" size="25" value="#{clienteBeanPJ.clientePJ.obs}"/>
+								<p:outputLabel for="responsavel" value="Responsável:" />
+								<p:inputText id="responsavel" maxlength="20" size="20" value="#{clienteBeanPJ.clientePJ.responsavel}"/>
+								<p:outputLabel for="mark" value="Mark:" />
+								<p:selectBooleanCheckbox id="mark">
+									<f:selectItem itemValue="mark" itemLabel="Mark" />
+								</p:selectBooleanCheckbox>
+								<p:outputLabel for="contatar" value="Contatar......:" />
+								<p:selectCheckboxMenu id="contatar" label="Contatar">
+									<f:selectItem itemLabel="Celular" itemValue="contcel" />
+									<f:selectItem itemLabel="Fone" itemValue="contfone" />
+									<f:selectItem itemLabel="SMS" itemValue="contsms" />
+									<f:selectItem itemLabel="Email" itemValue="contemail" />
+									<f:selectItem itemLabel="Messenger" itemValue="contfacebook" />
+									<f:selectItem itemLabel="Outro" itemValue="contoutro" />
+								</p:selectCheckboxMenu>
+							</p:panelGrid>
+						</div>
+					</p:tab>
+					<p:tab title="Sócios">
+						<br />
+						<div class="ui-fluid" align="center">
+
+							<p:dataTable var="pfisica" value="tabelapf" reflow="true">
+
+								<f:facet name="header">
+            							Relação de sócios da empresa
+        							</f:facet>
+								<p:column headerText="CPF">
+									<h:outputText value="campo cpf" />
+								</p:column>
+
+								<p:column headerText="Nome">
+									<h:outputText value="campo nome" />
+								</p:column>
+
+								<p:column headerText="Celular">
+									<h:outputText value="campo celular" />
+								</p:column>
+
+								<p:column headerText="Administrador">
+									<h:outputText value="campo socioadmin" />
+								</p:column>
+
+								<p:column headerText="Participação">
+									<h:outputText value="campo particip" />
+								</p:column>
+							</p:dataTable>
+							<p:selectOneButton id="botaopjop">
+								<f:selectItem itemLabel="Ir ao cadastro do sócio selecionado"
+									itemValue="bot1oppj" />
+							</p:selectOneButton>
+
+						</div>
+					</p:tab>
+
+					<p:tab title="CNPJ">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:outputLabel for="ccnpj" value="Cartão CNPJ:" />
+							<p:inputText id="ccnpj" maxlength="20" size="10" />
+
+						</div>
+					</p:tab>
+
+					<p:tab title="Contrato social">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:outputLabel for="csocial" value="Contrato social:" />
+							<p:inputText id="csocial" maxlength="20" size="10" />
+
+						</div>
+					</p:tab>
+
+					<p:tab title="Fiscal">
+						<br />
+						<div class="ui-fluid" align="center">
+
+							<p:dataTable scrollHeight="300" var="controle" value="tabfiscal"
+								reflow="true">
+
+								<f:facet name="header">
+            							Regime Tributário
+        							</f:facet>
+								<p:column headerText="Ano exercício">
+									<h:outputText value="campo anoex" />
+								</p:column>
+
+								<p:column headerText="Regime fiscal">
+									<h:outputText value="campo regime" />
+								</p:column>
+
+								<p:column headerText="Regime recolhimento">
+									<h:outputText value="campo recolhe" />
+								</p:column>
+
+								<p:column headerText="Usuário">
+									<h:outputText value="usuariofiscal" />
+								</p:column>
+							</p:dataTable>
+						</div>
+					</p:tab>
+
+					<p:tab title="I.E.">
+						<br />
+						<div class="ui-fluid" align="center">
+
+							<p:outputLabel for="iestadual" value="Inscrição Estadual:" />
+							<p:inputText id="iestadual" maxlength="20" size="10" />
+
+						</div>
+					</p:tab>
+					<p:tab title="I.M.">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:outputLabel for="imunicipal" value="Inscrição Municipal:" />
+							<p:inputText id="imunicipal" maxlength="20" size="10" />
+
+						</div>
+					</p:tab>
+					<p:tab title="Arquivo">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:outputLabel for="odoctos"
+								value="Arquivo digital de documentos:" />
+							<p:inputText id="odoctos" maxlength="20" size="10" />
+
+						</div>
+					</p:tab>
+					<p:tab title="Solicitações">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-1,ui-grid-col-2" layout="grid"
+								styleClass="ui-panelgrid-blank">
+
+								<p:outputLabel for="calendar" value="Vencimento" />
+								<p:calendar id="calendar" />
+								<p:outputLabel for="radio" value="Prioridade" />
+								<p:selectOneRadio id="radio" layout="responsive" columns="3">
+									<f:selectItem itemLabel="1" itemValue="lp1" />
+									<f:selectItem itemLabel="2" itemValue="lp2" />
+									<f:selectItem itemLabel="3" itemValue="lp3" />
+								</p:selectOneRadio>
+								<p:outputLabel for="compromisso" value="Compromisso" />
+								<p:inputText id="compromisso" />
+								<p:selectOneMenu id="Grupo">
+									<f:selectItem itemLabel="Roberto" itemValue="Roberto" />
+									<f:selectItem itemLabel="Rute" itemValue="Rute" />
+									<f:selectItem itemLabel="Daiane" itemValue="Daiane" />
+									<f:selectItem itemLabel="Cris" itemValue="Cris" />
+									<f:selectItem itemLabel="Ricardo" itemValue="Ricardo" />
+								</p:selectOneMenu>
+								<p:commandButton id="gravar" value="Gravar" icon="ui-icon-disk"
+									type="button" />
+							</p:panelGrid>
+
+							<p:dataTable scrollHeight="300" var="controle"
+								value="tabcontrole" reflow="true">
+
+								<f:facet name="header">
+            							Solicitações da empresa
+        							</f:facet>
+								<p:column headerText="Data">
+									<h:outputText value="campo datas" />
+								</p:column>
+
+								<p:column headerText="Solicitação">
+									<h:outputText value="campo solicitas" />
+								</p:column>
+
+								<p:column headerText="Usuário">
+									<h:outputText value="ususolicit" />
+								</p:column>
+
+								<p:column headerText="Solução">
+									<h:outputText value="campo solucaos" />
+								</p:column>
+
+								<p:column headerText="Data solução">
+									<h:outputText value="dtsolucaos" />
+								</p:column>
+
+								<p:column headerText="Usuário solução">
+									<h:outputText value="usuariosol" />
+								</p:column>
+							</p:dataTable>
+						</div>
+					</p:tab>
+					<p:tab title="A receber" titletip="">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:panelGrid columns="8"
+								columnClasses="ui-grid-col-1,ui-grid-col-16" layout="grid"
+								styleClass="ui-panelgrid-blank">
+
+								<p:outputLabel for="calendarps" value="Data" />
+								<p:calendar id="calendarps" />
+								<p:outputLabel for="valorps" value="Valor:" />
+								<p:inputText id="valorps" />
+								<p:selectOneMenu id="formaps">
+									<f:selectItem itemLabel="Forma Pagto." itemValue="" />
+									<f:selectItem itemLabel="Dinheiro Parcial" itemValue="DinPp" />
+									<f:selectItem itemLabel="Dinheiro Total" itemValue="DinTp" />
+									<f:selectItem itemLabel="Cartão Débito Parcial"
+										itemValue="CDTp" />
+									<f:selectItem itemLabel="Cartão Débito Total" itemValue="CDPp" />
+									<f:selectItem itemLabel="Cartão Crédito" itemValue="CCp" />
+									<f:selectItem itemLabel="Boleto" itemValue="Btop" />
+									<f:selectItem itemLabel="Cheque" itemValue="Cheqp" />
+								</p:selectOneMenu>
+								<p:outputLabel for="pagops" value="Pago:" />
+								<p:inputText id="pagops" />
+								<p:commandButton id="gravarps" value="Incluir"
+									icon="ui-icon-disk" type="button" />
+							</p:panelGrid>
+
+							<p:dataTable scrollHeight="300" var="areceber"
+								value="tabareceber" reflow="true">
+
+								<f:facet name="header">
+            							Recebimentos da empresa
+        							</f:facet>
+								<p:column headerText="Data">
+									<h:outputText value="campo datar" />
+								</p:column>
+
+								<p:column headerText="Serviço">
+									<h:outputText value="campo servr" />
+								</p:column>
+
+								<p:column headerText="Forma de Pagamento">
+									<h:outputText value="campo formapagtor" />
+								</p:column>
+
+								<p:column headerText="Valor">
+									<h:outputText value="campo valorr" />
+								</p:column>
+
+								<p:column headerText="Saldo">
+									<h:outputText value="campo saldo" />
+								</p:column>
+
+								<p:column headerText="Data Pagto">
+									<h:outputText value="dtpagtor" />
+								</p:column>
+
+								<p:column headerText="Usuário">
+									<h:outputText value="usuarior" />
+								</p:column>
+							</p:dataTable>
+							<p:selectOneButton id="botaopagop">
+								<f:selectItem itemLabel="Estornar Pagamento" itemValue="bot1opp" />
+								<f:selectItem itemLabel="Imprimir" itemValue="bot2opp" />
+							</p:selectOneButton>
+						</div>
+					</p:tab>
+					<p:tab title="Serviços">
+						<br />
+						<div class="ui-fluid" align="center">
+							<p:panelGrid columns="10"
+								columnClasses="ui-grid-col-1,ui-grid-col-20" layout="grid"
+								styleClass="ui-panelgrid-blank">
+
+								<p:outputLabel for="calendars" value="Data" />
+								<p:calendar id="calendars" />
+								<p:selectCheckboxMenu id="servls" label="Serviços>>>">
+									<f:selectItem itemLabel="Dut" itemValue="S1" />
+									<f:selectItem itemLabel="Dual" itemValue="S2" />
+									<f:selectItem itemLabel="Seguro" itemValue="S3" />
+								</p:selectCheckboxMenu>
+								<p:outputLabel for="valors" value="Valor:" />
+								<p:inputText id="valors" />
+								<p:selectOneMenu id="formapos">
+									<f:selectItem itemLabel="Forma Pagto." itemValue="" />
+									<f:selectItem itemLabel="Dinheiro Parcial" itemValue="DinP" />
+									<f:selectItem itemLabel="Dinheiro Total" itemValue="DinT" />
+									<f:selectItem itemLabel="Cartão Débito Parcial" itemValue="CDT" />
+									<f:selectItem itemLabel="Cartão Débito Total" itemValue="CDP" />
+									<f:selectItem itemLabel="Cartão Crédito" itemValue="CC" />
+									<f:selectItem itemLabel="Boleto" itemValue="Bto" />
+									<f:selectItem itemLabel="Cheque" itemValue="Cheq" />
+								</p:selectOneMenu>
+								<p:outputLabel for="pagos" value="Pago:" />
+								<p:inputText id="pagos" />
+								<p:commandButton id="gravars" value="Incluir"
+									icon="ui-icon-disk" type="button" />
+							</p:panelGrid>
+							<p:dataTable scrollHeight="300" var="controle"
+								value="tabcontrole" reflow="true">
+
+								<f:facet name="header">
+            							Serviços contratados
+        							</f:facet>
+								<p:column headerText="Data">
+									<h:outputText value="campo dataserv" />
+								</p:column>
+
+								<p:column headerText="Serviço">
+									<h:outputText value="campo servico" />
+								</p:column>
+
+								<p:column headerText="Valor">
+									<h:outputText value="campo valor" />
+								</p:column>
+
+								<p:column headerText="Forma Pagto">
+									<h:outputText value="pagtoserv" />
+								</p:column>
+
+								<p:column headerText="Pago">
+									<h:outputText value="pagtoserv" />
+								</p:column>
+
+								<p:column headerText="Situação">
+									<h:outputText value="situacao" />
+								</p:column>
+
+								<p:column headerText="Usuário">
+									<h:outputText value="usuarioserv" />
+								</p:column>
+							</p:dataTable>
+							<p:selectOneButton id="botaoservop">
+								<f:selectItem itemLabel="Excluir Serviço" itemValue="bot1sop" />
+								<f:selectItem itemLabel="Editar Situação" itemValue="bot2sop" />
+								<f:selectItem itemLabel="Concluir" itemValue="bot3sop" />
+								<f:selectItem itemLabel="Imprimir" itemValue="bot4sop" />
+							</p:selectOneButton>
+						</div>
+					</p:tab>
+				</p:tabView>
+
+			</div>
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

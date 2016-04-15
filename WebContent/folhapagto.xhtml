@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+
+			<br />
+
+			<div class="ui-fluid" align="center">
+
+				<p:accordionPanel style="margin-top:20px">
+
+					<p:tab disabled="false" title="FOLHA DE PAGAMENTO">
+						<p:selectOneMenu id="regmes">
+							<f:selectItem itemLabel="janeiro" itemValue="1" />
+							<f:selectItem itemLabel="fevereiro" itemValue="2" />
+							<f:selectItem itemLabel="março" itemValue="3" />
+							<f:selectItem itemLabel="abril" itemValue="4" />
+							<f:selectItem itemLabel="maio" itemValue="5" />
+							<f:selectItem itemLabel="junho" itemValue="6" />
+							<f:selectItem itemLabel="Julho" itemValue="7" />
+							<f:selectItem itemLabel="agosto" itemValue="8" />
+							<f:selectItem itemLabel="setembro" itemValue="9" />
+							<f:selectItem itemLabel="outubro" itemValue="10" />
+							<f:selectItem itemLabel="novembro" itemValue="11" />
+							<f:selectItem itemLabel="dezembro" itemValue="12" />
+						</p:selectOneMenu>
+
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Lançamentos
+        					</f:facet>
+
+							<p:column headerText="Data">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="CPF">
+								<h:outputText value="111.111.111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Roberto Saturnino" />
+							</p:column>
+
+							<p:column headerText="Valor Salário">
+								<h:outputText value="9.999,99" />
+							</p:column>
+
+							<p:column headerText="Provento">
+								<h:outputText value="Salário" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="1.500,00" />
+							</p:column>
+
+							<p:column headerText="Desconto">
+								<h:outputText value="" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="" />
+							</p:column>
+							
+							<p:column headerText="Total">
+								<h:outputText value="" />
+							</p:column>							
+
+						</p:dataTable>
+
+						<p:outputLabel id="totfolha" value="TOTAL R$ 20.000,00" />
+						
+						<p:outputLabel for="bottotfolha" value="" />
+						<p:selectOneButton id="bottotfolha">
+							<f:selectItem itemLabel="Imprimir folha" itemValue="bot1" />
+							<f:selectItem itemLabel="Imprimir recibos" itemValue="bot2" />
+							<f:selectItem itemLabel="Enviar por Email" itemValue="bot3" />
+						</p:selectOneButton>
+
+					</p:tab>
+					<p:tab disabled="false" title="Lançamentos">
+						<p:dataTable rowSelectMode="true" scrollRows="5" scrollWidth="200"
+							var="controle" value="tabcontrole" reflow="true">
+
+							<f:facet name="header">
+            					Lançar Folha de Pagamento
+        					</f:facet>
+
+							<p:column headerText="Data">
+								<h:outputText value="10/01/2016" />
+							</p:column>
+
+							<p:column headerText="CPF">
+								<h:outputText value="111.111.111-11" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText value="Roberto Saturnino" />
+							</p:column>
+
+							<p:column headerText="Valor Salário">
+								<h:outputText value="9.999,99" />
+							</p:column>
+
+							<p:column headerText="Provento">
+								<h:outputText value="Salário" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="1.500,00" />
+							</p:column>
+
+							<p:column headerText="Desconto">
+								<h:outputText value="" />
+							</p:column>
+
+							<p:column headerText="Valor">
+								<h:outputText value="" />
+							</p:column>
+							
+							<p:column headerText="Total">
+								<h:outputText value="" />
+							</p:column>
+
+						</p:dataTable>
+
+						<p:outputLabel for="botlfolha" value="" />
+						<p:selectOneButton id="botlfolha">
+							<f:selectItem itemLabel="Incluir" itemValue="bot1" />
+							<f:selectItem itemLabel="Excluir" itemValue="bot2" />
+						</p:selectOneButton>
+
+					</p:tab>
+
+				</p:accordionPanel>
+			</div>
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

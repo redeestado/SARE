@@ -1,0 +1,11 @@
+@Entity – Define que a classe será uma tabela no banco de dados
+
+@Id – Define um atributo identificador na tabela
+
+@GeneratedValue – Define a forma que o atributo identificador irá fazer o incremento
+
+@ManyToOne – Define um relacionamento de Muitos para Um
+
+@JoinColumn – Define caracteristicas do atributo da tabela quando se utiliza relacionamentos, no caso acima, o atributo que irá conter a chave estrangeira terá o nome de “idEstado”
+
+O próximo passo é criar os nossos métodos de consulta para que possamos utilizar no nosso ManagedBean.

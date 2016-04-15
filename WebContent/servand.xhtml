@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="content">
+
+		<h:form>
+			
+			<br />
+			<h2 style="margin-top: 0" align="center" >Serviços processos em execução</h2>
+			<p:separator />	
+			<br />
+			
+			<div class="ui-fluid" align="center">
+
+				<p:dataTable scrollHeight="300" var="controle" value="tabcontrole"
+					reflow="true">
+
+					<f:facet name="header">
+            			Serviços em execução
+        			</f:facet>
+        			
+					<p:column headerText="Data">
+						<p:inputText id="empresa" maxlength="50" size="10" />
+					</p:column>
+
+					<p:column headerText="Serviço">
+						<p:inputSwitch id="empr" size="5" />
+					</p:column>
+
+					<p:column headerText="Valor">
+						<p:selectBooleanCheckbox>
+						Tarefa executada
+						&nbps;
+						</p:selectBooleanCheckbox>
+					</p:column>
+
+					<p:column headerText="Situação">
+						<h:outputText value="situacao" />
+					</p:column>
+
+					<p:column headerText="Pagamento">
+						<h:outputText value="dtpagtoserv" />
+					</p:column>
+
+					<p:column headerText="Usuário">
+						<h:outputText value="usuarioserv" />
+					</p:column>
+				</p:dataTable>
+			</div>			
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>
+</html>

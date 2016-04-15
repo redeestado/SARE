@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:composition template="/WEB-INF/templates/template.xhtml">
+		<ui:define name="content">
+
+			<h:form>
+			<br />
+			<div class="ui-fluid" align="center">
+
+				<p:dataTable var="ppat" value="tabelapat" reflow="true">
+
+					<f:facet name="header">
+            				Controle Patrimonial
+        			</f:facet>
+					<p:column headerText="Tipo">
+						<p:selectOneMenu id="menutipo">
+							<f:selectItem itemLabel="==selecione==" itemValue="" />
+							<f:selectItem itemLabel="Imóvel com Edificação"								itemValue="imenu1" />
+							<f:selectItem itemLabel="Terreno" itemValue="imenu2" />
+							<f:selectItem itemLabel="Veículo" itemValue="imenu3" />
+							<f:selectItem itemLabel="Móveis" itemValue="imenu4" />
+							<f:selectItem itemLabel="Equipamentos" itemValue="imenu5" />
+							<f:selectItem itemLabel="Outros" itemValue="imenu6" />
+						</p:selectOneMenu>
+
+					</p:column>
+
+					<p:column headerText="Descrição">
+						<h:outputText value="Prédio comercial" />
+					</p:column>
+
+					<p:column headerText="Endereço">
+						<h:outputText value="Rua 2, 10 - Sorocaba - SP" />
+					</p:column>
+
+					<p:column headerText="Valor">
+						<h:outputText value="500.000,00" />
+					</p:column>
+
+					<p:column headerText="Data aquisição">
+						<h:outputText value="10/01/2011" />
+					</p:column>
+					
+					<p:column headerText="Vida útil até">
+						<h:outputText value="10/01/2021" />
+					</p:column>
+					
+					<p:column headerText="Taxa depreciação">
+						<h:outputText value="2%" />
+					</p:column>
+					
+					<p:column headerText="Valor atual">
+						<h:outputText value="450.000,00" />
+					</p:column>
+					
+					<p:column headerText="Vendido em">
+						<h:outputText value="" />
+					</p:column>
+					
+					<p:column headerText="Valor venda">
+						<h:outputText value="" />
+					</p:column>
+					
+
+				</p:dataTable>
+				<h3>Total Patrimonial R$ 450.000,00 </h3>
+				<p:selectOneButton id="botaopat">
+					<f:selectItem itemLabel="Incluir" itemValue="bot1" />
+					<f:selectItem itemLabel="Alterar" itemValue="bot2" />
+					<f:selectItem itemLabel="Excluir" itemValue="bot3" />
+					<f:selectItem itemLabel="Imprimir" itemValue="bot4" />
+				</p:selectOneButton>
+
+			</div>
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+</html>
