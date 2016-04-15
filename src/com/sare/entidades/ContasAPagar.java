@@ -37,9 +37,9 @@ public class ContasAPagar implements Serializable {
 	private Float desconto;
 	private Float total;
 	@Column(length=20)
-	private String grupo;
+	private Grupo grupo;
 	@Column(length=20)
-	private String subgrupo;
+	private Subgrupo subgrupo;
 	@Column(length=1)
 	private String tipo;
 	@Column(length=20)
@@ -150,21 +150,6 @@ public class ContasAPagar implements Serializable {
 		this.total = total;
 	}
 
-	public String getGrupo() {
-		return grupo;
-	}
-
-	public void setGrupo(String grupo) {
-		this.grupo = grupo;
-	}
-
-	public String getSubgrupo() {
-		return subgrupo;
-	}
-
-	public void setSubgrupo(String subgrupo) {
-		this.subgrupo = subgrupo;
-	}
 
 	public String getTipo() {
 		return tipo;
@@ -205,6 +190,23 @@ public class ContasAPagar implements Serializable {
 	public void setMark(String mark) {
 		this.mark = mark;
 	}
+
+	public Grupo getGrupo() {
+		return grupo;
+	}
+
+	public void setGrupo(Grupo grupo) {
+		this.grupo = grupo;
+	}
+
+	public Subgrupo getSubgrupo() {
+		return subgrupo;
+	}
+
+	public void setSubgrupo(Subgrupo subgrupo) {
+		this.subgrupo = subgrupo;
+	}
+	
 	
 	
 	
