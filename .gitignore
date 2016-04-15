@@ -1,0 +1,10 @@
+.settings
+/target
+.classpath
+.project
+.metadata
+.tern-project
+build/
+Bibliotecas/
+redeestado
+redeestado.pub
